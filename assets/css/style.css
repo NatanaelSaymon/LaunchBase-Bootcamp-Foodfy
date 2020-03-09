@@ -6,7 +6,6 @@
 }
 
 /*===  fontes ===*/
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*=== variaveis ===*/
@@ -15,7 +14,6 @@
 }
 
 html,body{
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -166,5 +164,24 @@ footer{
 footer p{
     color: #999999;
     font-size: 14px;
+}
+
+/*=== Pagina Sobre ===*/
+.title-sobre, .subtitle-sobre{
+    margin-bottom: 25px;
+}
+
+.title-sobre{
+    font-size: 24px;
+}
+
+.subtitle-sobre{
+    font-size: 20px;
+}
+
+.p-sobre{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 28px;
 }
 
