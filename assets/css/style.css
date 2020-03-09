@@ -5,16 +5,13 @@
     box-sizing: border-box;
 }
 
-/*===  fontes ===*/
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-/*=== variaveis ===*/
-:root{
-    --color-text: #000000;
-}
-
 html,body{
     font-family: 'Roboto', sans-serif;
+}
+
+header{
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 ul, li{
@@ -26,9 +23,13 @@ a{
     color: var(--color-text);
 }
 
-header{
-    max-width: 940px;
-    margin: 0 auto;
+/*===  fontes ===*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+/*=== variaveis ===*/
+:root{
+    --color-text: #000000;
 }
 
 .header{
@@ -112,8 +113,6 @@ header{
     border-radius: 15px;
 }
 
-
-
 .receitas > div{
     flex: 1 1 250px;
     margin: 0 10px;
@@ -135,22 +134,6 @@ header{
     margin-right: 0px;
 }
 
-.receitas > div:nth-child(7){
-    margin-left: 0px;
-}
-
-.receitas > div:nth-child(9){
-    margin-right: 0px;
-}
-
-.receitas > div:nth-child(10){
-    margin-left: 0px;
-}
-
-.receitas > div:nth-child(12){
-    margin-right: 0px;
-}
-
 
 
 /*=== footer ===*/
@@ -166,22 +149,4 @@ footer p{
     font-size: 14px;
 }
 
-/*=== Pagina Sobre ===*/
-.title-sobre, .subtitle-sobre{
-    margin-bottom: 25px;
-}
-
-.title-sobre{
-    font-size: 24px;
-}
-
-.subtitle-sobre{
-    font-size: 20px;
-}
-
-.p-sobre{
-    margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 28px;
-}
 
