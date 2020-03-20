@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./assets/css/receitas.css">
         <link rel="stylesheet" href="./assets/css/sobre.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -50,44 +51,61 @@
             <div class="container">
                 <h2>Mais acessadas</h2>
                 <div class="receitas">
-                    <div class="alimento" id="burger">
+                    <div class="receita-card" id="burger">
                         <img src="./assets/imagens/burger.png" class="img-receitas" alt="hamburger">
-                        <p>Triplo bacon burger</p>
-                        <span>por Jorge Relato</span>
+                        <p class="receita-title">Triplo bacon burger</p>
+                        <span class="receita-autor">por Jorge Relato</span>
                     </div>
 
-                    <div class="alimento" id="pizza">
+                    <div class="receita-card" id="pizza">
                         <img src="./assets/imagens/pizza.png" class="img-receitas" alt="pizza">
-                        <p>Pizza 4 estações</p>
-                        <span id="chef">por Fabiana Melo</span>
+                        <p class="receita-title" class="receita-title">Pizza 4 estações</p>
+                        <span class="receita-autor">por Fabiana Melo</span>
                     </div>
 
-                    <div class="alimento" id="espaguete">
+                    <div class="receita-card" id="espaguete">
                         <img src="./assets/imagens/espaguete.png" class="img-receitas" alt="espaguete">
-                        <p>Espaguete ao alho</p>
-                        <span>por Julia Kinoto</span>
+                        <p class="receita-title">Espaguete ao alho</p>
+                        <span class="receita-autor">por Julia Kinoto</span>
                     </div>
 
-                    <div class="alimento" id="lasanha">
+                    <div class="receita-card" id="lasanha">
                         <img src="./assets/imagens/lasanha.png" class="img-receitas" alt="lasanha">
-                        <p>Lasanha mac n' cheese</p>
-                        <span>por Juliano Vieria</span>
+                        <p class="receita-title">Lasanha mac n' cheese</p>
+                        <span class="receita-autor">por Juliano Vieria</span>
                     </div>
 
-                    <div class="alimento" id="doce">
+                    <div class="receita-card" id="doce">
                         <img src="./assets/imagens/doce.png" class="img-receitas" alt="doce">
-                        <p>Docinho pão-do-céu</p>
-                        <span>por Ricardo Golvea</span>
+                        <p class="receita-title">Docinho pão-do-céu</p>
+                        <span class="receita-autor">por Rireceita-cardo Golvea</span>
                     </div>
 
-                    <div class="alimento" id="asinhas">
+                    <div class="receita-card" id="asinhas">
                         <img src="./assets/imagens/asinhas.png" class="img-receitas" alt="asinhas">
-                        <p>Asinhas de frango ao barbecue</p>
-                        <span>por Vania Steroski</span>
+                        <p class="receita-title">Asinhas de frango ao barbecue</p>
+                        <span class="receita-autor">por Vania Steroski</span>
                     </div>
                 </div>
             </div>
         </scetion>
+
+        <!--modal-->
+        <div class='modal-overlay'>
+            <div class="modal">
+                <a class="close-modal">
+                    <i class="material-icons">
+                        close
+                    </i>
+                </a>
+
+                <div class="modal-receita">
+                    <img src="" alt="">
+                    <p class="receita-title"></p>
+                    <span class="receita-autor"></p>
+                </div>
+            </div>
+        </div>
 
         <footer>
             <p>Todos os reservados, receitas Foodfy</p>

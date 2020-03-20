@@ -90,12 +90,16 @@ a{
     margin-bottom: 20px;
 }
 
-.receitas p{
+.receita-card img{
+    cursor: pointer;
+}
+
+.receita-title{
     margin-top: 20px;
     font-size: 18px;
 }
 
-.receitas span{
+.receita-autor{
     display: inline-block;
     font-size: 14px;
     color: #777777;
@@ -134,6 +138,44 @@ a{
     margin-right: 0px;
 }
 
+/* === Modal === */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    opacity: 0; /*deixa transparente*/
+    visibility: hidden; /*fica escondido*/
+}
+
+.modal{
+    position: relative;
+    background-color: #ffffff;
+    width: 60%;
+    height: 50%;
+    margin: 25vh auto;
+    border-radius: 10px;
+}
+
+.modal .close-modal{
+    position: absolute;
+    color: #100F12;
+    right: 8px;
+    top: 3px;
+    cursor: pointer;
+}
+
+/*=== MODAL ACTIVE ===*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-receita img{
+    width: 100px;
+    height: 100px;
+}
 
 
 /*=== footer ===*/
