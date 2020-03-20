@@ -90,7 +90,7 @@ a{
     margin-bottom: 20px;
 }
 
-.receita-card img{
+.card img{
     cursor: pointer;
 }
 
@@ -152,7 +152,7 @@ a{
 .modal{
     position: relative;
     background-color: #ffffff;
-    width: 60%;
+    width: 40%;
     height: 50%;
     margin: 25vh auto;
     border-radius: 10px;
@@ -172,11 +172,12 @@ a{
     visibility: visible;
 }
 
-.modal-receita img{
-    width: 100px;
-    height: 100px;
+.modal-receita{
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: absolute;
 }
-
 
 /*=== footer ===*/
 footer{
