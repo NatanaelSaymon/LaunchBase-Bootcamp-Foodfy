@@ -151,32 +151,56 @@ a{
 
 .modal{
     position: relative;
-    background-color: #ffffff;
-    width: 40%;
-    height: 50%;
+    background-color: #ffffff;  
+    width: 647px;
+    height: 413px; 
     margin: 25vh auto;
     border-radius: 10px;
 }
 
+.modal-receita{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-receita img{
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    top: 5%;
+    position: absolute;
+}
+
+.receita-descricao{
+    position: absolute;
+    top: 260px;
+    text-align: center;
+}
+
+.receita-descricao p{
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.receita-descricao span{
+    font-size: 18px;
+}
+
+
+/* === FECHAR MODAL ===*/
 .modal .close-modal{
     position: absolute;
-    color: #100F12;
-    right: 8px;
-    top: 3px;
+    color: #777777;
+    right: 43%;
+    bottom: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /*=== MODAL ACTIVE ===*/
 .modal-overlay.active{
     opacity: 1;
     visibility: visible;
-}
-
-.modal-receita{
-    width: 100%;
-    height: 90%;
-    top: 5%;
-    position: absolute;
 }
 
 /*=== footer ===*/
