@@ -1,4 +1,8 @@
-/*=== RESET CSS ===*/
+/* ===  FONTES === */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+/* === RESET CSS === */
 *{
     margin: 0;
     padding: 0;
@@ -23,11 +27,8 @@ a{
     color: var(--color-text);
 }
 
-/*===  FONTES ===*/
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
-/*=== VARIAVES DE COR ===*/
+/* === VARIAVES DE COR === */
 :root{
     --color-text: #000000;
 }
@@ -52,13 +53,15 @@ a{
     padding: 10px;
 }
 
-/*=== CONTAINER-PRINCIPAL ===*/
+
+/* === CONTAINER-PRINCIPAL === */
 .container{
     max-width: 940px;
     margin: 0 auto;
 }
 
-/*=== BANNER ===*/
+
+/* === BANNER === */
 .banner-principal{
     display: flex;
     justify-content: space-around;
@@ -83,7 +86,8 @@ a{
     line-height: 28px;
 }
 
-/*=== RECEITAS ===*/
+
+/* === RECEITAS === */
 .receitas-mais-acessadas h2{
     margin-top: 40px;
     margin-bottom: 20px;
@@ -137,7 +141,24 @@ a{
     margin-right: 0px;
 }
 
-/* === Modal === */
+.receitas > div:nth-child(7){
+    margin-left: 0px;
+}
+
+.receitas > div:nth-child(9){
+    margin-right: 0px;
+}
+
+.receitas > div:nth-child(10){
+    margin-left: 0px;
+}
+
+.receitas > div:nth-child(12){
+    margin-right: 0px;
+}
+
+
+/* === MODAL === */
 .modal-overlay{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -186,7 +207,7 @@ a{
 }
 
 
-/* === FECHAR MODAL ===*/
+/* === FECHAR MODAL === */
 .modal .close-modal{
     position: absolute;
     color: #777777;
@@ -196,13 +217,15 @@ a{
     font-size: 16px;
 }
 
+
 /*=== MODAL ACTIVE ===*/
 .modal-overlay.active{
     opacity: 1;
     visibility: visible;
 }
 
-/*=== FOOTER ===*/
+
+/* === FOOTER === */
 footer{
     height: 62px;
     line-height: 62px;
@@ -215,4 +238,24 @@ footer p{
     font-size: 14px;
 }
 
+
+/* === PAGE SOBRE === */
+
+#page-sobre .title-sobre, .subtitle-sobre{
+    margin-bottom: 25px;
+}
+
+#page-sobre .title-sobre{
+    font-size: 24px;
+}
+
+#page-sobre .subtitle-sobre{
+    font-size: 20px;
+}
+
+#page-sobre .p-sobre{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 28px;
+}
 
