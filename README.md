@@ -1,12 +1,12 @@
 <h1 align="center">
-    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="400px" />
+    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="200px" />
 </h1>
 
 <h3 align="center">
-  Desafios Módulo 2 - Iniciando no Front-end
+  Desafio Foodfy
 </h3>
 
-<blockquote align="center">“Faça seu melhor, mas sempre com prazo de entrega!”</blockquote>
+<blockquote align="center">“Sonhos podem se tornar realidade.”</blockquote>
 
 <p align="center">
 
@@ -20,28 +20,15 @@
 
 </p>
 
-<p align="center">
-  <a href="#file_cabinet-materiais">Materiais</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-desafios">Desafios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-  <a href="#memo-licença">Licença</a>
-</p>
 
-## :file_cabinet: Materiais
+## :rocket: Sobre o Desafio  
+---
+Construir um site completo para uma empresa de receitas chamada Foodfy.
 
-- [Elementos principais do HTML](materiais/html.pdf)
-- [Propriedades importantes no CSS](materiais/css.pdf)
+<img src="https://camo.githubusercontent.com/149256ed02c9054607878cd5f68d083ee99ae27d/68747470733a2f2f726f636b6574736561742d63646e2e73332d73612d656173742d312e616d617a6f6e6177732e636f6d2f6d6f636b75702e706e67" alt="Imagem do desafio">
 
-## :rocket: Desafios
+---
 
-- [Primeiro HTML](desafios/02-1-primeiro-html.md)
-- [Página de descrição](desafios/02-2-pagina-descricao.md)
-- [Página de cursos e iframe](desafios/02-3-pagina-cursos-e-iframe.md)
-- [Construindo Foodfy](desafios/02-foodfy.md)
-
-## :calendar: Entrega
-
-Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
 ## :memo: Licença
 
