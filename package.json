@@ -1,0 +1,27 @@
+{
+  "name": "Foodfy",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"200px\" />\r </h1>",
+  "main": "data.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatanaelSaymon/Bootcamp-LaunchBase-Foodfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatanaelSaymon/Bootcamp-LaunchBase-Foodfy/issues"
+  },
+  "homepage": "https://github.com/NatanaelSaymon/Bootcamp-LaunchBase-Foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
