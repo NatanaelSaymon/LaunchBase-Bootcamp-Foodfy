@@ -1,5 +1,5 @@
+/* Modal */
 const modalOverlay = document.querySelector('.modal-overlay')
-
 const cards = document.querySelectorAll('.card')
 
 for(let card of cards){
@@ -13,7 +13,6 @@ for(let card of cards){
         modalOverlay.querySelector('span').innerHTML = `${autor}`
     })
 }
-
 
 /*function de fechar modal*/
 document.querySelector('.close-modal').addEventListener("click", function(){

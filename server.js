@@ -1,6 +1,7 @@
 const express = require ('express')
 const server = express()
 const nunjucks = require('nunjucks')
+const recipes = require('./data')
 
 // CONFIG ARQUIVOS ESTATICOS
 server.use(express.static('public'))
@@ -16,17 +17,21 @@ server.set("view engine", "njk")
 
 // ROTAS
 server.get("/", function(req, res){
-  return res.render('index.njk')
+  return res.render('index', { recipes })
 })
 server.get("/sobre", function(req, res){
-  return res.render('sobre.njk')
+  return res.render('sobre')
 })
 server.get("/receitas", function(req, res){
-  return res.render('receitas.njk')
+  return res.render('receitas', { recipes })
 })
 
 server.get("/recipes", function(req, res){
   return res.send("Loading...")
+})
+
+server.use(function(req, res){
+  return res.status(404).render('not-found')
 })
 
 // SERVIDOR
