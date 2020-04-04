@@ -26,8 +26,25 @@ server.get("/receitas", function(req, res){
   return res.render('receitas', { recipes })
 })
 
-server.get("/recipes", function(req, res){
-  return res.send("Loading...")
+// server.get("/recipes", function(req, res){
+//   const id = req.query.id
+//   const recipe = recipes.find(function(recipe){
+//     if(recipe.id == id){
+//       return true
+//     }
+//   })
+
+//   if(!recipe){
+//     return res.send("Receita não encontrada.")
+//   }
+
+//   return res.render("recipes", { recipe })
+// })
+
+server.get("/recipes/:id", function (req, res) {
+  const recipeId = req.params.id;
+  
+  return res.render("recipes", { recipes: recipes[recipeId] })
 })
 
 server.use(function(req, res){
@@ -36,5 +53,5 @@ server.use(function(req, res){
 
 // SERVIDOR
 server.listen(3000, function(){
-  console.log(' ==> Server is Runnign <==')
+  console.log(' ==> Server is Runnign <== ')
 })

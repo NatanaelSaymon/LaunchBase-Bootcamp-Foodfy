@@ -1,5 +1,5 @@
 /* ===  FONTES === */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
 /* === RESET CSS === */
@@ -16,10 +16,6 @@ html,body{
 header{
     max-width: 940px;
     margin: 0 auto;
-}
-
-ul, li{
-    list-style: none;
 }
 
 a{
@@ -43,6 +39,10 @@ a{
 .menu{
     display: flex;
     margin-left: 100px;
+}
+
+nav ul.menu{
+    list-style: none;
 }
 
 .menu li{
@@ -93,6 +93,17 @@ a{
     margin-bottom: 20px;
 }
 
+.receitas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-receitas{
+    max-width: 100%; /*deixa as imagens responvisa ocupando no maximo 100% do container onde estão*/
+    display: block;
+    border-radius: 15px;
+}
+
 .card img{
     cursor: pointer;
 }
@@ -109,15 +120,19 @@ a{
     margin-bottom: 30px;
 }
 
-.receitas{
-    display: flex;
-    flex-wrap: wrap;
+.receita-descricao p{
+    font-size: 28px;
+    margin-bottom: 6px;
 }
 
-.img-receitas{
-    max-width: 100%; /*deixa as imagens responvisa ocupando no maximo 100% do container onde estão*/
-    display: block;
-    border-radius: 15px;
+.receita-descricao span{
+    font-size: 18px;
+}
+
+.receita-descricao{
+    position: absolute;
+    top: 260px;
+    text-align: center;
 }
 
 .receitas > div{
@@ -157,6 +172,40 @@ a{
     margin-right: 0px;
 }
 
+/* === RECIPES === */
+.items-recipes{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.recipes p.receita-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.recipes span.receita-autor{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.recipes h2{
+    font-size: 24px;
+}
+
+.recipes .items-recipes ul{
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    list-style: inside;
+}
+
+.recipes .items-recipes p{
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
 
 /* === MODAL === */
 .modal-overlay{
@@ -189,21 +238,6 @@ a{
     border-radius: 10px;
     top: 5%;
     position: absolute;
-}
-
-.receita-descricao{
-    position: absolute;
-    top: 260px;
-    text-align: center;
-}
-
-.receita-descricao p{
-    font-size: 28px;
-    margin-bottom: 6px;
-}
-
-.receita-descricao span{
-    font-size: 18px;
 }
 
 

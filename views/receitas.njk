@@ -9,7 +9,7 @@
         <div class="container">
             <div class="receitas">
                 {% for recipe in recipes %}
-                    <div class="card" id="burger">
+                    <div class="card" id="{{recipe.id}}">
                         <img src="{{recipe.image}}" class="img-receitas" alt="Imagem de {{recipe.title}}">
                         <p class="receita-title">{{recipe.title}}</p>
                         <span class="receita-autor">{{recipe.author}}</span>

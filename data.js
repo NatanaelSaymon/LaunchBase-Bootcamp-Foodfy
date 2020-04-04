@@ -67,7 +67,7 @@ module.exports = [
       'Em uma frigideira ou assador coloque o óleo quando estiver quente frite até ficarem douradas.',
       'Para servir fica bonito com salada, ou abuse da criatividade.'
     ],
-    information: ''
+    information: 'Por porção de 100 g / mL, o alimento "Asa de frango, assada" da categoria "Aves" tem um total de 290,0 calorias e os seguintes valores nutricionais: 26,9 g de proteína, 0,0 g de carboidratos e 19,5 g de gordura.'
   },
   {
     id: 3,
@@ -136,6 +136,7 @@ module.exports = [
       'Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o',
       'açúcar de confeiteiro e corte em quadrados.'
     ],
-    information: ''
+    information: '',
+
   }
 ];
