@@ -23,6 +23,10 @@ a{
     color: var(--color-text);
 }
 
+.hide{
+    display: none;
+}
+
 
 /* === VARIAVES DE COR === */
 :root{
@@ -189,8 +193,27 @@ nav ul.menu{
     font-size: 20px;
 }
 
-.recipes h2{
+.recipes .items-recipes h2{
     font-size: 24px;
+}
+
+.recipes .items-recipes h2 span{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.recipes .items-recipes input.btn-recipes{
+    border: none;
+    background: none;
+    outline-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    transition: 600ms;
 }
 
 .recipes .items-recipes ul{
@@ -292,4 +315,3 @@ footer p{
     font-size: 18px;
     line-height: 28px;
 }
-

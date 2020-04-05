@@ -19,27 +19,14 @@ server.set("view engine", "njk")
 server.get("/", function(req, res){
   return res.render('index', { recipes })
 })
+
 server.get("/sobre", function(req, res){
   return res.render('sobre')
 })
+
 server.get("/receitas", function(req, res){
   return res.render('receitas', { recipes })
 })
-
-// server.get("/recipes", function(req, res){
-//   const id = req.query.id
-//   const recipe = recipes.find(function(recipe){
-//     if(recipe.id == id){
-//       return true
-//     }
-//   })
-
-//   if(!recipe){
-//     return res.send("Receita não encontrada.")
-//   }
-
-//   return res.render("recipes", { recipe })
-// })
 
 server.get("/recipes/:id", function (req, res) {
   const recipeId = req.params.id;
@@ -50,6 +37,8 @@ server.get("/recipes/:id", function (req, res) {
 server.use(function(req, res){
   return res.status(404).render('not-found')
 })
+
+
 
 // SERVIDOR
 server.listen(3000, function(){

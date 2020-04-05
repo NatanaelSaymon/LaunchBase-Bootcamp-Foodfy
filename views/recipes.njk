@@ -8,30 +8,60 @@
     <section class="receitas-mais-acessadas">
       <div class="container">
           <div class="receitas">
-            <div class="card recipes" id="{{recipes.id}}">
+            <div class="recipes" id="{{recipes.id}}">
               <img src="{{recipes.image}}" class="img-receitas" alt="Imagem de {{recipes.title}}">
               <p class="receita-title">{{recipes.title}}</p>
               <span class="receita-autor">{{recipes.author}}</span>
               <div class="items-recipes">
-                <h2>Ingredientes</h2>
 
-                <ul>
-                  {% for ingredient in recipes.ingredients %}
-                    <li>{{ingredient}}</li>
-                  {% endfor %}
-                </ul>
+                <h2>Ingredientes 
+                  <input 
+                    type="button" 
+                    value="mostrar" 
+                    class="btn-recipes"
+                    onclick="mostra('ingredientes')"
+                    id="mostraingredientes"
+                  />
+                </h2>
 
-                <h2>Modo de preparo</h2>
-
-                <ul>
-                  {% for preparation in recipes.preparation %}
-                    <li>{{preparation}}</li>
-                  {% endfor %}
-                </ul>
-
-                <h2>Informações</h2>
-                <p>{{recipes.information}}</p>
-
+                <div id="ingredientes" class="hide">
+                  <ul>
+                    {% for ingredient in recipes.ingredients %}
+                      <li>{{ingredient}}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+            
+                <h2>Modo de preparo
+                  <input 
+                    type="button" 
+                    value="mostrar" 
+                    class="btn-recipes"
+                    onclick="mostra('preparo')"
+                    id="mostrapreparo"
+                  />
+                </h2>
+                <div id="preparo" class="hide">
+                  <ul>
+                    {% for preparation in recipes.preparation %}
+                      <li>{{preparation}}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              
+                <h2>Informações
+                  <input 
+                    type="button" 
+                    value="mostrar" 
+                    class="btn-recipes"
+                    onclick="mostra('informacoes')"
+                    id="mostrainformacoes"
+                  />
+                </h2>
+                <div id="informacoes" class="hide">
+                  <p>{{recipes.information}}</p>
+                </div>
+                
               </div>
             </div>
           </div>
