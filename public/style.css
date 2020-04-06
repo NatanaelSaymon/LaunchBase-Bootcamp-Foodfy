@@ -109,6 +109,7 @@ nav ul.menu{
 }
 
 .card img{
+    height: 110px;
     cursor: pointer;
 }
 
