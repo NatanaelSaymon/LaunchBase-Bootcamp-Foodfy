@@ -32,6 +32,55 @@ Construir um site completo para uma empresa de receitas chamada Foodfy.
 
 ---
 
+## Pagina Home
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/imgindex.png">
+</div>
+
+## Pagina Sobre
+
+Nesta pagina contamos um pouco sobre o projeto e como tudo começou. 
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/page-sobre-receita.png">
+</div>
+
+## Pagina de Receitas
+
+A pagina de receita contem todas as receitas do site. 
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/imgpagereceitas.png">
+</div>
+
+## Modal da Receita
+
+Hoje com o refatoramento concluido, não existe mais o modal. Ao clicar em qualquer receita, será direcionado para a pagina de descrição da Receita.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/Modal-da-receita.png">
+</div>
+
+## Zoom da Receita
+
+Nesta pagina contem toda a descrição da receita, como 
+* Ingredientes
+* Modo de preparo
+* Informações
+
+Ao clicar em "Mostrar" aparecerá as informações contida em cada descrição.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/Zoom-na-receita.png">
+</div>
+
+## Zoom da Receita - descrições
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/Zoom-na-receita-opcoes.png">
+</div>
+
 ## Stack
 * NodeJS
 
