@@ -81,6 +81,14 @@ Ao clicar em "Mostrar" aparecerá as informações contida em cada descrição.
 <img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/Zoom-na-receita-opcoes.png">
 </div>
 
+## Pagina - not-found
+
+Caso o usuario digite algum endereço não encontrado no site, será direcionado para essa pagina.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/LaunchBase-Bootcamp-Foodfy/master/public/image/not-found.png">
+</div>
+
 ## Stack
 * NodeJS
 
