@@ -19,42 +19,26 @@
     </head>
 
     <body>
-        <header class="header">
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="/">
-                    <img src="/image/logo.png">
-                </a>
-            </div>
+        {% block header %}
+            <header class="header">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="/">
+                        <img src="/image/logo.png">
+                    </a>
+                </div>
 
-            <nav>
-                <!-- MENU -->
-                <ul class="menu">
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/receitas">Receitas</a></li>
-                </ul>
-            </nav>
-        </header>
+                <nav>
+                    <!-- MENU -->
+                    <ul class="menu">
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/receitas">Receitas</a></li>
+                    </ul>
+                </nav>
+            </header>
+        {% endblock %}
 
         {% block content %} {% endblock %}
-
-        <!--modal-->
-        {# <div class='modal-overlay'>
-            <div class="modal">
-                <a class="close-modal">
-                    <i class="material-icons"></i>
-                    Fechar modal
-                </a>
-
-                <div class="modal-receita">
-                    <img src="" alt="">
-                    <div class="receita-descricao">
-                        <p class="receita-title"></p>
-                        <span class="receita-autor"></p>
-                    </div>
-                </div>
-            </div>
-        </div> #}
 
         <footer>
             <p>Todos os reservados, receitas Foodfy</p>

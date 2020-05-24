@@ -1,5 +1,24 @@
 {% extends "layout.njk" %}
 
+{% block header %}
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="/">
+                <img src="/image/logo.png">
+            </a>
+        </div>
+
+        <nav>
+            <!-- MENU -->
+            <ul class="menu">
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/receitas">Receitas</a></li>
+            </ul>
+        </nav>
+    </header>
+{% endblock %}
+
 {% block content %}
     <section class="banner">
         <div class="container">

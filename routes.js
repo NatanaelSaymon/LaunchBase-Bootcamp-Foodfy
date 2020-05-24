@@ -1,23 +1,18 @@
 const express = require('express')
 const routes = express.Router()
-const recipes = require('./data') //Variavel que contem as receitas
+const receitas = require('./controllers/recipes')
+const pages = require('./controllers/pages')
 
-// ROTAS
-routes.get("/", function(req, res){
-  return res.render('index', { recipes })
-})
-routes.get("/sobre", function(req, res){
-  return res.render('sobre')
-})
-routes.get("/receitas", function(req, res){
-  return res.render('receitas/index', { recipes })
-})
-routes.get("/recipe/:id", function (req, res) {
-  const recipeId = req.params.id;
-  return res.render('receitas/recipe', { recipes: recipes[recipeId] })
-})
-routes.use(function(req, res){
-  return res.status(404).render('not-found')
-})
+// ROTAS INDEX/SOBRE/STATUS
+routes.get("/", pages.index)
+routes.get("/sobre", pages.about)
+
+
+//ROTAS RECEITAS
+routes.get("/receitas", receitas.index)
+routes.get("/recipe/:id", receitas.id)
+
+//ROTA 404
+routes.use(pages.status)
 
 module.exports = routes

@@ -13,11 +13,6 @@ html,body{
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    max-width: 940px;
-    margin: 0 auto;
-}
-
 a{
     text-decoration: none;
     color: var(--color-text);
@@ -34,6 +29,8 @@ a{
 }
 
 .header{
+    max-width: 940px;
+    margin: 0 auto;
     display: flex;
     align-items: center; /*centraliza os itens ao centro*/
     flex-wrap: wrap;
@@ -55,6 +52,20 @@ nav ul.menu{
 
 .menu li a{
     padding: 10px;
+}
+
+/* === HEADER PAGE RECEITAS ===*/
+
+.header-receitas{
+    background-color: #000000;
+}
+
+.logo-receitas{
+    max-width: 940px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 

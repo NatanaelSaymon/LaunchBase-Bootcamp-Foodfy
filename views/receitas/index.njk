@@ -3,10 +3,23 @@
 {% block title %}
     <title>Foodfy - Receitas</title>
 {% endblock %}
+
+{% block header %}
+
+    <header class="header-receitas">
+        <div class="logo-receitas">
+            <a href="/">
+                <img src="/image/logo-receitas.png" alt="logo">
+            </a>
+        </div>
+    </header>
+
+{% endblock %}
         
 {% block content %}
     <section class="receitas-mais-acessadas">
         <div class="container">
+            <h2>Gerenciar receitas</h2>
             <div class="receitas">
                 {% for recipe in recipes %}
                     <div class="card" id="{{recipe.id}}">
