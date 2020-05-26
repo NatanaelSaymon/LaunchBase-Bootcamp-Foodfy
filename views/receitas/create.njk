@@ -1,0 +1,60 @@
+{% extends "layout.njk" %}
+
+{% block header %}
+
+  <header class="header-receitas">
+      <div class="logo-receitas">
+          <a href="/receitas">
+              <img src="/image/logo-receitas.png" alt="logo">
+          </a>
+      </div>
+  </header>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <form  class="form-recipes" method="POST" action="/receitas">
+            <div class="page-create-topo">
+                <h2>Criando receita</h2>
+                <button type="submit">Salvar receita</button>
+            </div>
+            <div class="item">
+                <div>
+                    <h3>Imagem da receita</h3>
+                </div>
+                <div>
+                    <input type="url" name="imagem-receita">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Ingredientes</h3>
+                </div>
+                <div>
+                    <input type="text" name="ingredientes">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Modo de preparo</h3>
+                </div>
+                <div>
+                    <input type="text" name="modo-preparo">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Informações adicionais</h3>
+                </div>
+                <div class="box-info">
+                    <textarea name="info-adicionais" id="" cols="100" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

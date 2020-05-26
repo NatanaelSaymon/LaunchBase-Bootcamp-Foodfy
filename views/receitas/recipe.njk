@@ -8,7 +8,7 @@
 
   <header class="header-receitas">
       <div class="logo-receitas">
-          <a href="/">
+          <a href="/receitas">
               <img src="/image/logo-receitas.png" alt="logo">
           </a>
       </div>
@@ -21,13 +21,16 @@
     <div class="container">
       <div class="receitas">
         <div class="recipes" id="{{recipes.id}}">
-          <div class="title">
+          
+          <div class="page-recipes-topo">
             <h3>Receita: {{recipes.title}}</h3>
-            <a href="">Editar receita</a>
+            <button type="submit">Salvar receita</button>
           </div>
+
           <img src="{{recipes.image}}" class="img-receitas" alt="Imagem de {{recipes.title}}">
           <p class="receita-title">{{recipes.title}}</p>
           <span class="receita-autor">{{recipes.author}}</span>
+         
           <div class="items-recipes">
 
             <h2>Ingredientes 
@@ -57,6 +60,7 @@
                 id="mostrapreparo"
               />
             </h2>
+
             <div id="preparo" class="hide">
               <ul>
                 {% for preparation in recipes.preparation %}
@@ -74,9 +78,11 @@
                 id="mostrainformacoes"
               />
             </h2>
+
             <div id="informacoes" class="hide">
               <p>{{recipes.information}}</p>
             </div>
+
           </div>
         </div>
       </div>
