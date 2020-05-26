@@ -20,6 +20,24 @@ function mostra(id){
     }
 }
 
+//Function para adicionar mais ingredientes
+document.querySelector('.add-ingrediente').addEventListener("click", addIngredient)
+
+function addIngredient(){
+    const ingredients = document.querySelector('#ingredientes')
+    const fieldContainer = document.querySelectorAll('.ingrediente')
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    if(newField.children[0].value == ""){
+        return false
+    }
+
+    newField.children[0].value = ""
+    ingredients.appendChild(newField)
+}
+
+
+
 
 
 
