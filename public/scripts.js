@@ -36,6 +36,21 @@ function addIngredient(){
     ingredients.appendChild(newField)
 }
 
+document.querySelector('.add-preparo').addEventListener("click", addNovoPasso)
+
+function addNovoPasso(){
+    const novoPasso = document.querySelector('#modoPreparo')
+    const fieldContainer = document.querySelectorAll('.novoPrepraro')
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+    if(newField.children[0].value == ""){
+        return false
+    }
+
+    newField.children[0].value = ""
+    novoPasso.appendChild(newField)
+}
+
 
 
 

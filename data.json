@@ -1,0 +1,32 @@
+{
+  "recipes": [
+    {
+      "id": 2,
+      "imagem_receita": "https://www.receiteria.com.br/wp-content/uploads/receitas-fit-1200x774.jpg",
+      "ingredientes": [
+        "fermento",
+        "leite",
+        "legumes"
+      ],
+      "modo_preparo": [
+        "adicione pedaços de morango",
+        "adicione pedaços de chocolate"
+      ],
+      "info_adicionais": "serve 2 pessoas"
+    },
+    {
+      "id": 2,
+      "imagem_receita": "https://boaformaposparto.com/wp-content/uploads/2019/07/marmita-fitness-oriental-595x397.jpg",
+      "ingredientes": [
+        "farinha",
+        "milho",
+        "arroz"
+      ],
+      "modo_preparo": [
+        "na geladeira por 10 min",
+        "adicione pedaços de abacaxi"
+      ],
+      "info_adicionais": "serve 2 pessoas"
+    }
+  ]
+}

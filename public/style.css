@@ -204,6 +204,8 @@ nav ul.menu{
     padding: 30px 0;
 }
 
+.add-ingrediente,
+.add-preparo,
 .page-receitas-topo a,
 .page-create-topo button,
 .page-recipes-topo button{
@@ -291,6 +293,10 @@ nav ul.menu{
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     outline: none;
+}
+
+#ingredientes, #modoPreparo{
+    margin-bottom: 10px;
 }
 
 .form-recipes textarea{
