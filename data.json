@@ -1,32 +1,66 @@
 {
   "recipes": [
     {
-      "id": 2,
+      "id": 1,
       "imagem_receita": "https://www.receiteria.com.br/wp-content/uploads/receitas-fit-1200x774.jpg",
       "ingredientes": [
-        "fermento",
-        "leite",
-        "legumes"
+        "macarrão",
+        "temperos",
+        "tomate"
       ],
       "modo_preparo": [
-        "adicione pedaços de morango",
-        "adicione pedaços de chocolate"
+        "cozinhe o macarrão"
       ],
-      "info_adicionais": "serve 2 pessoas"
+      "info_adicionais": "junte tudo na panela"
     },
     {
       "id": 2,
-      "imagem_receita": "https://boaformaposparto.com/wp-content/uploads/2019/07/marmita-fitness-oriental-595x397.jpg",
+      "imagem_receita": "https://www.sescsp.org.br/files/artigo/9233587a-1043-4bdd-9a91-58694c95bc5c.jpg",
       "ingredientes": [
-        "farinha",
-        "milho",
-        "arroz"
+        "arroz",
+        "feijão"
       ],
       "modo_preparo": [
-        "na geladeira por 10 min",
-        "adicione pedaços de abacaxi"
+        "asse a carne",
+        "cozinhe o arroz e o feijão"
       ],
-      "info_adicionais": "serve 2 pessoas"
+      "info_adicionais": "coma tudo"
+    },
+    {
+      "id": 3,
+      "imagem_receita": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "ingredientes": [
+        "3 kg de carne moída (escolha uma carne magra e macia)",
+        "300 g de bacon moído",
+        "1 ovo",
+        "3 colheres (sopa) de farinha de trigo",
+        "3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador",
+        "30 ml de água gelada"
+      ],
+      "modo_preparo": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
+        "Faça porções de 90 g a 100 g.",
+        "Forre um plástico molhado em uma bancada e modele os hambúrgueres utilizando um aro como base.",
+        "Faça um de cada vez e retire o aro logo em seguida.",
+        "Forre uma assadeira de metal com plástico, coloque os hambúrgueres e intercale camadas de carne e plásticos (sem apertar).",
+        "Faça no máximo 4 camadas por forma e leve para congelar.",
+        "Retire do congelador, frite ou asse e está pronto."
+      ],
+      "info_adicionais": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo tomates e alface."
+    },
+    {
+      "id": 4,
+      "imagem_receita": "https://img.itdg.com.br/tdg/images/recipes/000/000/876/324587/324587_original.jpg?mode=crop&width=710&height=400",
+      "ingredientes": [
+        "queijo",
+        "molho de tomate",
+        "carne moida",
+        "parmesão"
+      ],
+      "modo_preparo": [
+        "monte em camadas e coloque no forno"
+      ],
+      "info_adicionais": "Receita de Lasanha de carne moída. Enviada por Fernanda Carvalho da Fonseca e demora apenas 50 minutos"
     }
   ]
 }

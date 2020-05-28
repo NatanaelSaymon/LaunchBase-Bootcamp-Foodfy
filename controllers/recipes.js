@@ -42,3 +42,19 @@ exports.post = function(req, res){
 
   return res.redirect('/receitas')
 }
+
+//SHOW
+exports.show = function(req, res){
+  const { id } = req.params
+
+  const foundRecipe = data.recipes.find(function(recipes){
+    return recipes.id == id
+  })
+
+  if(!foundRecipe){
+    return res.send('Receita não encontrada, tente novamente!')
+  }
+
+  // return res.send(foundRecipe)
+  return res.render('receitas/show', {recipes: foundRecipe})
+}
