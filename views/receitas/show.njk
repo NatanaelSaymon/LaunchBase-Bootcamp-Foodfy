@@ -23,16 +23,16 @@
         <div class="recipes">
 
           <div class="page-show-topo">
-            <h3>Receita: {{recipes.nome}}</h3>
-            <a href="/receitas/{{ recipes.id }}/edit" class="button">Editar receita</a>
+            <h3>Receita: {{recipe.nome}}</h3>
+            <a href="/receitas/{{ recipe.id }}/edit" class="button">Editar receita</a>
           </div>
 
-          <section class="avatar" style="background-image: url({{recipes.imagem_receita}})"> 
+          <section class="avatar" style="background-image: url({{recipe.imagem_receita}})"> 
             {# Imagem da receita #}
           </section>
 
-          <p class="receita-title">{{recipes.nome}}</p>
-          <span class="receita-autor">por {{recipes.autor}}</span>
+          <p class="receita-title">{{recipe.nome}}</p>
+          <span class="receita-autor">por {{recipe.autor}}</span>
          
           <div class="items-recipes">
 
@@ -40,7 +40,7 @@
 
             <div id="ingredientes">
               <ul>
-                {% for ingrediente in recipes.ingredientes %}
+                {% for ingrediente in recipe.ingredientes %}
                   <li>{{ingrediente}}</li>
                 {% endfor %}
               </ul>
@@ -50,7 +50,7 @@
 
             <div id="preparo">
               <ul>
-                {% for preparo in recipes.modo_preparo %}
+                {% for preparo in recipe.modo_preparo %}
                   <li>{{preparo}}</li>
                 {% endfor %}
               </ul>
@@ -59,7 +59,7 @@
             <h2>Informações</h2>
 
             <div id="informacoes">
-              <p>{{recipes.info_adicionais}}</p>
+              <p>{{recipe.info_adicionais}}</p>
             </div>
 
           </div>

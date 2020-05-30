@@ -47,8 +47,8 @@ exports.post = function(req, res){
 exports.show = function(req, res){
   const { id } = req.params
 
-  const foundRecipe = data.recipes.find(function(recipes){
-    return recipes.id == id
+  const foundRecipe = data.recipes.find(function(recipe){
+    return recipe.id == id
   })
 
   if(!foundRecipe){
@@ -56,19 +56,52 @@ exports.show = function(req, res){
   }
 
   // return res.send(foundRecipe)
-  return res.render('receitas/show', { recipes: foundRecipe })
+  return res.render('receitas/show', { recipe: foundRecipe })
 }
 
 //EDIT
 exports.edit = function(req, res){
   const { id } = req.params
 
-  const foundRecipe = data.recipes.find(function(recipes){
-    return recipes.id == id
+  const foundRecipe = data.recipes.find(function(recipe){
+    return recipe.id == id
   })
 
   if(!foundRecipe){
     return res.send('Receita não encontrada, tente novamente!')
   }
-  return res.render('receitas/edit', { recipes: foundRecipe })
+  return res.render('receitas/edit', { recipe: foundRecipe })
+}
+
+//PUT
+exports.put = function(req, res){
+  const { id } = req.body
+
+  let index = 0
+  
+  const foundRecipe = data.recipes.find(function(recipe, foundRecipe){
+    if(id == recipe.id){
+      index = foundRecipe
+      return true
+    }
+  })
+
+  if(!foundRecipe){
+    return res.send('Receita não encontrada, tente novamente!')
+  }
+
+  const recipe = {
+    ...foundRecipe,
+    ...req.body,
+    id: Number(req.body.id)
+  }
+
+  data.recipes[index] = recipe
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+    if(err){
+      return res.send("Escrita errada!")
+    }
+    return res.redirect(`/receitas/${id}`)
+  })
 }
