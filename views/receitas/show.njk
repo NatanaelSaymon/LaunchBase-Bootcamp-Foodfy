@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block title %}
-  <title>Nome da receita</title>
+  <title>Foodfy - Receitas</title>
 {% endblock %}
 
 {% block header %}
@@ -22,17 +22,17 @@
       <div class="receitas">
         <div class="recipes">
 
-          <div class="page-recipes-topo">
-            <h3>Receita: {# {{recipes.title}} #}</h3>
-            <button type="submit">Salvar receita</button>
+          <div class="page-show-topo">
+            <h3>Receita: {{recipes.nome}}</h3>
+            <a href="/receitas/{{ recipes.id }}/edit" class="button">Editar receita</a>
           </div>
 
           <section class="avatar" style="background-image: url({{recipes.imagem_receita}})"> 
             {# Imagem da receita #}
           </section>
 
-          {# <p class="receita-title">{{recipes.title}}</p>
-          <span class="receita-autor">{{recipes.author}}</span> #}
+          <p class="receita-title">{{recipes.nome}}</p>
+          <span class="receita-autor">por {{recipes.autor}}</span>
          
           <div class="items-recipes">
 

@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block header %}
+
+  <header class="header-receitas">
+      <div class="logo-receitas">
+          <a href="/receitas">
+              <img src="/image/logo-receitas.png" alt="logo">
+          </a>
+      </div>
+  </header>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <form  class="form-recipes" method="POST" action="/receitas">
+            
+            <div class="page-create-topo">
+                <h2>Editando receita</h2>
+                <button type="submit">Salvar</button>
+            </div>
+            
+            {% include 'receitas/fields.njk' %}
+            
+        </form>
+    </div>
+{% endblock %}

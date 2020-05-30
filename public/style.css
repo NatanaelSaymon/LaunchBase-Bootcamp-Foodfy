@@ -102,15 +102,7 @@ nav ul.menu{
 }
 
 
-/* === PAGE RECEITAS === */
-
-.avatar{
-    height: 280px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-}
+/* === PAGE RECEITAS  - INDEX=== */
 
 .receitas-mais-acessadas h2{
     margin-top: 40px;
@@ -197,27 +189,36 @@ nav ul.menu{
     margin-right: 0px;
 }
 
-/* === PAGE RECIPES === */
+/* === PAGE RECEITAS - RECIPES === */
 
 .page-receitas-topo h2{
     margin-top: 0;
     margin-bottom: 0;
 }
 
+.avatar{
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.page-index-topo,
 .page-create-topo,
-.page-receitas-topo,
-.page-recipes-topo{
+.page-show-topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
 }
 
-.add-ingrediente,
-.add-preparo,
-.page-receitas-topo a,
+
+.page-index-topo .button,
 .page-create-topo button,
-.page-recipes-topo button{
+.page-show-topo .button, 
+.add-ingrediente,
+.add-preparo {
     width: 136px;
     height: 37px;
     font-size: 16px;

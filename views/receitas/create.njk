@@ -16,16 +16,36 @@
     <div class="container">
 
         <form  class="form-recipes" method="POST" action="/receitas">
+
             <div class="page-create-topo">
                 <h2>Criando receita</h2>
                 <button type="submit">Salvar receita</button>
             </div>
+
             <div class="item">
                 <div>
                     <h3>Imagem da receita</h3>
                 </div>
                 <div>
                     <input type="url" name="imagem_receita">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Nome da receita</h3>
+                </div>
+                <div>
+                    <input type="text" name="nome">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <h3>Autor</h3>
+                </div>
+                <div>
+                    <input type="text" name="autor">
                 </div>
             </div>
 
@@ -58,9 +78,10 @@
                     <h3>Informações adicionais</h3>
                 </div>
                 <div class="box-info">
-                    <textarea name="info_adicionais" id="" cols="100" rows="10"></textarea>
+                    <textarea name="info_adicionais" cols="100" rows="10"></textarea>
                 </div>
             </div>
+
         </form>
     </div>
 {% endblock %}

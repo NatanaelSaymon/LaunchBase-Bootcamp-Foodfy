@@ -21,9 +21,7 @@ function mostra(id){
 }
 
 //Function para adicionar mais ingredientes
-document.querySelector('.add-ingrediente').addEventListener("click", addIngredient)
-
-function addIngredient(){
+document.querySelector('.add-ingrediente').addEventListener("click", function(addIngredient){
     const ingredients = document.querySelector('#ingredientes')
     const fieldContainer = document.querySelectorAll('.ingrediente')
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
@@ -34,11 +32,10 @@ function addIngredient(){
 
     newField.children[0].value = ""
     ingredients.appendChild(newField)
-}
+})
 
-document.querySelector('.add-preparo').addEventListener("click", addNovoPasso)
-
-function addNovoPasso(){
+//Function para adicionar mais passos
+document.querySelector('.add-preparo').addEventListener("click", function(addNovoPasso){
     const novoPasso = document.querySelector('#modoPreparo')
     const fieldContainer = document.querySelectorAll('.novoPrepraro')
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
@@ -49,7 +46,7 @@ function addNovoPasso(){
 
     newField.children[0].value = ""
     novoPasso.appendChild(newField)
-}
+})
 
 
 

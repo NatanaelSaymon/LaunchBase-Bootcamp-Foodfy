@@ -2,65 +2,34 @@
   "recipes": [
     {
       "id": 1,
-      "imagem_receita": "https://www.receiteria.com.br/wp-content/uploads/receitas-fit-1200x774.jpg",
+      "imagem_receita": "https://www.receitasonline.com.br/wp-content/uploads/bolo-de-cenoura-cobertura-chocolate.jpg",
+      "nome": "Bolo de Cenoura",
+      "autor": "Suellen Souza",
       "ingredientes": [
-        "macarrão",
-        "temperos",
-        "tomate"
+        "1/2 xícara (chá) de óleo",
+        "3 cenouras médias raladas"
       ],
       "modo_preparo": [
-        "cozinhe o macarrão"
+        "Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.",
+        "Acrescente o açúcar e bata novamente por 5 minutos."
       ],
-      "info_adicionais": "junte tudo na panela"
+      "info_adicionais": "O bolo de cenoura é um bolo doce com raspagem de cenoura misturada dentro da massa. A cenoura é amolecida no processo de cozimento, e o bolo, usualmente, tem um amolecimento e uma textura densa e suave. O bolo de cenoura à moda brasileira é feito com uma massa contendo cenoura, normalmente com cobertura de chocolate."
     },
     {
       "id": 2,
-      "imagem_receita": "https://www.sescsp.org.br/files/artigo/9233587a-1043-4bdd-9a91-58694c95bc5c.jpg",
-      "ingredientes": [
-        "arroz",
-        "feijão"
-      ],
-      "modo_preparo": [
-        "asse a carne",
-        "cozinhe o arroz e o feijão"
-      ],
-      "info_adicionais": "coma tudo"
-    },
-    {
-      "id": 3,
       "imagem_receita": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "nome": "Triplo bacon burger",
+      "autor": "Jorge Relato",
       "ingredientes": [
         "3 kg de carne moída (escolha uma carne magra e macia)",
         "300 g de bacon moído",
-        "1 ovo",
-        "3 colheres (sopa) de farinha de trigo",
-        "3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador",
-        "30 ml de água gelada"
+        "1 ovo"
       ],
       "modo_preparo": [
         "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
-        "Faça porções de 90 g a 100 g.",
-        "Forre um plástico molhado em uma bancada e modele os hambúrgueres utilizando um aro como base.",
-        "Faça um de cada vez e retire o aro logo em seguida.",
-        "Forre uma assadeira de metal com plástico, coloque os hambúrgueres e intercale camadas de carne e plásticos (sem apertar).",
-        "Faça no máximo 4 camadas por forma e leve para congelar.",
-        "Retire do congelador, frite ou asse e está pronto."
+        "Faça porções de 90 g a 100 g."
       ],
-      "info_adicionais": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo tomates e alface."
-    },
-    {
-      "id": 4,
-      "imagem_receita": "https://img.itdg.com.br/tdg/images/recipes/000/000/876/324587/324587_original.jpg?mode=crop&width=710&height=400",
-      "ingredientes": [
-        "queijo",
-        "molho de tomate",
-        "carne moida",
-        "parmesão"
-      ],
-      "modo_preparo": [
-        "monte em camadas e coloque no forno"
-      ],
-      "info_adicionais": "Receita de Lasanha de carne moída. Enviada por Fernanda Carvalho da Fonseca e demora apenas 50 minutos"
+      "info_adicionais": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo, tomates e alface."
     }
   ]
 }
