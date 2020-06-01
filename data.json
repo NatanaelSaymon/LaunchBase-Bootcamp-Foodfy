@@ -2,34 +2,84 @@
   "recipes": [
     {
       "id": 1,
-      "imagem_receita": "https://www.receitasonline.com.br/wp-content/uploads/bolo-de-cenoura-cobertura-chocolate.jpg",
-      "nome": "Bolo de Cenoura",
-      "autor": "Suellen Souza Pereira",
+      "url_imagem": "https://comidinhasdochef.com/wp-content/uploads/2020/02/Bolo-de-Cenoura-Tudo-Gostoso.jpg",
+      "titulo": "Bolo de Cenoura",
+      "autor": "Suellen Souza",
       "ingredientes": [
-        "1/2 xícara (chá) de óleo",
-        "3 cenouras médias raladas"
+        "Farinha",
+        "Ovo",
+        "Chocolate",
+        "Açucar",
+        "Cenoura"
       ],
       "modo_preparo": [
-        "Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture.",
-        "Acrescente o açúcar e bata novamente por 5 minutos."
+        "Bata no liquidificador todos os ingredientes, acrescentando a farinha aos poucos.",
+        "Depois unte e enfarinhe uma forma e despeje a massa nela. Asse em forno médio por cerca de 40 minutos. Tire do forno, espere amornar e desenforme."
       ],
-      "info_adicionais": "O bolo de cenoura é um bolo doce com raspagem de cenoura misturada dentro da massa. A cenoura é amolecida no processo de cozimento, e o bolo, usualmente, tem um amolecimento e uma textura densa e suave. O bolo de cenoura à moda brasileira é feito com uma massa contendo cenoura, normalmente com cobertura de chocolate(cacau em pó)."
+      "info_adicionais": "O bolo de cenoura é um bolo doce com raspagem de cenoura misturada dentro da massa. A cenoura é amolecida no processo de cozimento, e o bolo, usualmente, tem um amolecimento e uma textura densa e suave. O bolo de cenoura à moda brasileira é feito com uma massa contendo cenoura, normalmente com cobertura de chocolate."
     },
     {
       "id": 2,
-      "imagem_receita": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
-      "nome": "Triplo bacon burger",
-      "autor": "Jorge Relato",
+      "url_imagem": "https://portal-amb-imgs.clubedaana.com.br/2018/11/Bolo-de-chocolate-com-calda-de-brigadeiro.jpg",
+      "titulo": "Bolo de chocolate",
+      "autor": "Natanael Saymon",
       "ingredientes": [
-        "3 kg de carne moída (escolha uma carne magra e macia)",
-        "300 g de bacon moído",
-        "1 ovo"
+        "1 xícara de chá de leite",
+        "2 unidades de ovo",
+        "2 xícaras de chá de farinha de trigo",
+        "1 xícara de chá de achocolatado em pó",
+        "1 xícara de chá de açúcar",
+        "1 colheres de sopa de fermento químico em pó"
       ],
       "modo_preparo": [
-        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
-        "Faça porções de 90 g a 100 g."
+        "Coloque os líquidos no liqüidificador e bata até misturar bem. Coloque os outros ingredientes, sendo o fermento o último. Leve para assar em forno médio, numa forma untada e enfarinhada.",
+        "Para a cobertura, misture numa panela a manteiga, o achocolatado, o açúcar e o leite. Leve ao fogo até derreter e a calda ficar homogênea. Cubra o bolo ainda quente, furadinho com garfo"
       ],
-      "info_adicionais": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açougueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijo, tomates e alface."
-    }
+      "info_adicionais": "Bolo de chocolate pode ser servido no café da manhã, lanche da tarde ou até a merenda das crianças na escola. Esta receita feita com achocolato é batida no liquidificador e assada no forno. A dica para fazer a cobertura penetrar na massa do bolo é fazer furinhos com o garfo antes de derramar a calda."
+    },
+    {
+      "id": 3,
+      "url_imagem": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "titulo": "Lasanha mac n' cheese",
+      "autor": "Juliano Vieira",
+      "ingredientes": [
+        "massa pronta de lasanha",
+        "400 g de presunto",
+        "400 g de mussarela ralada",
+        "2 copos de requeijão",
+        "150 g de mussarela para gratinar"
+      ],
+      "modo_preparo": [
+        "Em uma panela, coloque a manteiga para derreter.",
+        "Acrescente a farinha de trigo e misture bem com auxílio de um fouet.",
+        "Adicione o leite e misture até formar um creme homogêneo.",
+        "Tempere com sal, pimenta e noz-moscada a gosto.",
+        "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
+      ],
+      "info_adicionais": "Recheie a lasanha da forma que preferir."
+    },
+    {
+      "id": 4,
+      "url_imagem": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png",
+      "titulo": "Docinhos pão-do-céu",
+      "autor": "Ricardo Golvea",
+      "ingredientes": [
+        "1 kg de batata - doce",
+        "100 g de manteiga",
+        "3 ovos",
+        "1 pacote de coco seco ralado (100 g)",
+        "3 colheres (sopa) de açúcar 1 lata de Leite Moça",
+        "1 colher (sopa) de fermento em pó",
+        "manteiga para untar",
+        "açúcar de confeiteiro"
+      ],
+      "modo_preparo": [
+        "Cozinhe a batata-doce numa panela de pressão, com meio litro de água, por cerca de 20 minutos. Descasque e passe pelo espremedor, ainda quente.",
+        "Junte a manteiga,os ovos, o coco ralado,o açúcar, o Leite Moça e o fermento em pó, mexendo bem após cada adição.",
+        "Despeje em assadeira retangular média, untada e leve ao forno médio (180°C), por aproximadamente 45 minutos. Depois de frio, polvilhe, com o",
+        "açúcar de confeiteiro e corte em quadrados."
+      ],
+      "info_adicionais": "Aproveite essa receita para fazer um dinheiro extra"
+      }
   ]
 }

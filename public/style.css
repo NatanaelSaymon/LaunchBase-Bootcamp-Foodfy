@@ -75,6 +75,7 @@ nav ul.menu{
     margin: 0 auto;
 }
 
+/* === PAGE INDEX === */
 
 /* === BANNER === */
 .banner-principal{
@@ -102,27 +103,38 @@ nav ul.menu{
 }
 
 
-/* === PAGE RECEITAS  - INDEX=== */
-
+/* === RECEITAS === */
 .receitas-mais-acessadas h2{
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .receitas{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 18px;
 }
 
-.img-receitas{
-    max-width: 100%; /*deixa as imagens responvisa ocupando no maximo 100% do container onde estão*/
-    display: block;
-    border-radius: 15px;
-}
-
-.card img{
-    height: 110px;
+.card{
+    transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card .card-img{
+    height: 110px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 .receita-title{
@@ -152,42 +164,43 @@ nav ul.menu{
     text-align: center;
 }
 
-.receitas > div{
-    flex: 1 1 250px;
-    margin: 0 10px;
+
+/* === FOOTER === */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    background: #EEEEEE;
+    text-align: center;
 }
 
-.receitas > div:nth-child(1){
-    margin-left: 0px;
+.footer p{
+    color: #999999;
+    font-size: 14px;
 }
 
-.receitas > div:nth-child(3){
-    margin-right: 0px;
+/* === PAGE SOBRE === */
+
+#page-sobre .title-sobre, .subtitle-sobre{
+    margin-bottom: 25px;
 }
 
-.receitas > div:nth-child(4){
-    margin-left: 0px;
+#page-sobre .title-sobre{
+    font-size: 24px;
 }
 
-.receitas > div:nth-child(6){
-    margin-right: 0px;
+#page-sobre .subtitle-sobre{
+    font-size: 20px;
 }
 
-.receitas > div:nth-child(7){
-    margin-left: 0px;
+#page-sobre .p-sobre{
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 28px;
 }
 
-.receitas > div:nth-child(9){
-    margin-right: 0px;
-}
-
-.receitas > div:nth-child(10){
-    margin-left: 0px;
-}
-
-.receitas > div:nth-child(12){
-    margin-right: 0px;
-}
 
 /* === PAGE RECEITAS - RECIPES === */
 
@@ -309,6 +322,11 @@ nav ul.menu{
     margin-bottom: 10px;
 }
 
+.ingrediente input,
+.novoPreparo input{
+    margin-bottom: 5px;
+}
+
 .form-recipes textarea{
     width: 100%;
     resize: none;
@@ -317,40 +335,4 @@ nav ul.menu{
     padding: 10px;
     font-size: 16px;
     outline: none;
-}
-
-
-/* === FOOTER === */
-
-footer{
-    height: 62px;
-    line-height: 62px;
-    background: #EEEEEE;
-    text-align: center;
-}
-
-footer p{
-    color: #999999;
-    font-size: 14px;
-}
-
-
-/* === PAGE SOBRE === */
-
-#page-sobre .title-sobre, .subtitle-sobre{
-    margin-bottom: 25px;
-}
-
-#page-sobre .title-sobre{
-    font-size: 24px;
-}
-
-#page-sobre .subtitle-sobre{
-    font-size: 20px;
-}
-
-#page-sobre .p-sobre{
-    margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 28px;
 }

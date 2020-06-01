@@ -23,15 +23,15 @@
         <div class="recipes">
 
           <div class="page-show-topo">
-            <h3>Receita: {{recipe.nome}}</h3>
+            <h3>Receita: {{recipe.titulo}}</h3>
             <a href="/receitas/{{ recipe.id }}/edit" class="button">Editar receita</a>
           </div>
 
-          <section class="avatar" style="background-image: url({{recipe.imagem_receita}})"> 
+          <section class="avatar" style="background-image: url({{recipe.url_imagem}})"> 
             {# Imagem da receita #}
           </section>
 
-          <p class="receita-title">{{recipe.nome}}</p>
+          <p class="receita-title">{{recipe.titulo}}</p>
           <span class="receita-autor">por {{recipe.autor}}</span>
          
           <div class="items-recipes">
