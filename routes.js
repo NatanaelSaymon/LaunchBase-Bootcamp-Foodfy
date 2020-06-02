@@ -15,6 +15,7 @@ routes.get("/receitas/create", receitas.create)
 routes.get("/receitas/:id", receitas.show)
 routes.get("/receitas/:id/edit", receitas.edit)
 routes.put("/receitas", receitas.put)
+routes.delete("/receitas", receitas.delete)
 
 routes.post("/receitas", receitas.post)
 

@@ -19,7 +19,7 @@
 {% block content %}
   <section class="receitas-mais-acessadas">
     <div class="container">
-      <div class="receitas">
+
         <div class="recipes">
 
           <div class="page-show-topo">
@@ -27,17 +27,13 @@
             <a href="/receitas/{{ recipe.id }}/edit" class="button">Editar receita</a>
           </div>
 
-          <section class="avatar" style="background-image: url({{recipe.url_imagem}})"> 
-            {# Imagem da receita #}
-          </section>
-
+          <section class="avatar" style="background-image: url({{recipe.url_imagem}})"></section>
           <p class="receita-title">{{recipe.titulo}}</p>
           <span class="receita-autor">por {{recipe.autor}}</span>
          
           <div class="items-recipes">
 
             <h2>Ingredientes</h2>
-
             <div id="ingredientes">
               <ul>
                 {% for ingrediente in recipe.ingredientes %}
@@ -47,7 +43,6 @@
             </div>
         
             <h2>Modo de preparo</h2>
-
             <div id="preparo">
               <ul>
                 {% for preparo in recipe.modo_preparo %}
@@ -57,14 +52,14 @@
             </div>
           
             <h2>Informações</h2>
-
             <div id="informacoes">
               <p>{{recipe.info_adicionais}}</p>
             </div>
 
           </div>
+          
         </div>
-      </div>
+      
     </div>
   </section>
 {% endblock %}

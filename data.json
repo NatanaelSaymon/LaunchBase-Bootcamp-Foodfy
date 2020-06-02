@@ -4,10 +4,10 @@
       "id": 1,
       "url_imagem": "https://comidinhasdochef.com/wp-content/uploads/2020/02/Bolo-de-Cenoura-Tudo-Gostoso.jpg",
       "titulo": "Bolo de Cenoura",
-      "autor": "Suellen Souza",
+      "autor": "Suellen Souza Pereira",
       "ingredientes": [
         "Farinha",
-        "Ovo",
+        "3 Ovos",
         "Chocolate",
         "Açucar",
         "Cenoura"
@@ -17,25 +17,6 @@
         "Depois unte e enfarinhe uma forma e despeje a massa nela. Asse em forno médio por cerca de 40 minutos. Tire do forno, espere amornar e desenforme."
       ],
       "info_adicionais": "O bolo de cenoura é um bolo doce com raspagem de cenoura misturada dentro da massa. A cenoura é amolecida no processo de cozimento, e o bolo, usualmente, tem um amolecimento e uma textura densa e suave. O bolo de cenoura à moda brasileira é feito com uma massa contendo cenoura, normalmente com cobertura de chocolate."
-    },
-    {
-      "id": 2,
-      "url_imagem": "https://portal-amb-imgs.clubedaana.com.br/2018/11/Bolo-de-chocolate-com-calda-de-brigadeiro.jpg",
-      "titulo": "Bolo de chocolate",
-      "autor": "Natanael Saymon",
-      "ingredientes": [
-        "1 xícara de chá de leite",
-        "2 unidades de ovo",
-        "2 xícaras de chá de farinha de trigo",
-        "1 xícara de chá de achocolatado em pó",
-        "1 xícara de chá de açúcar",
-        "1 colheres de sopa de fermento químico em pó"
-      ],
-      "modo_preparo": [
-        "Coloque os líquidos no liqüidificador e bata até misturar bem. Coloque os outros ingredientes, sendo o fermento o último. Leve para assar em forno médio, numa forma untada e enfarinhada.",
-        "Para a cobertura, misture numa panela a manteiga, o achocolatado, o açúcar e o leite. Leve ao fogo até derreter e a calda ficar homogênea. Cubra o bolo ainda quente, furadinho com garfo"
-      ],
-      "info_adicionais": "Bolo de chocolate pode ser servido no café da manhã, lanche da tarde ou até a merenda das crianças na escola. Esta receita feita com achocolato é batida no liquidificador e assada no forno. A dica para fazer a cobertura penetrar na massa do bolo é fazer furinhos com o garfo antes de derramar a calda."
     },
     {
       "id": 3,
@@ -80,6 +61,6 @@
         "açúcar de confeiteiro e corte em quadrados."
       ],
       "info_adicionais": "Aproveite essa receita para fazer um dinheiro extra"
-      }
+    }
   ]
 }

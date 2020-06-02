@@ -105,3 +105,21 @@ exports.put = function(req, res){
     return res.redirect(`/receitas/${id}`)
   })
 }
+
+//DELETE
+exports.delete = function(req, res){
+  const { id } = req.body
+
+  const filterRecipes = data.recipes.filter(function(recipe){
+    return recipe.id != id
+  })
+
+  data.recipes = filterRecipes
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
+    if(err){
+      return res.send("Escrita errada!")
+    }
+    return res.redirect(`/receitas`)
+  })
+}

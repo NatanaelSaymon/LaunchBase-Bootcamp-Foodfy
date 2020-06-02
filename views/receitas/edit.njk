@@ -17,9 +17,9 @@
 
         <form  class="form-recipes" method="POST" action="/receitas?_method=PUT">
             
-            <div class="page-create-topo">
+            <div class="page-edit-topo">
                 <h2>Editando receita</h2>
-                <button type="submit">Salvar</button>
+                <button type="submit">Salvar receita</button>
             </div>
             
             {% include 'receitas/fields.njk' %}
@@ -27,5 +27,15 @@
             <input type="hidden" name="id" value="{{ recipe.id }}">
 
         </form>
+
+        <form method="POST" action="/receitas?_method=DELETE">
+            <input type="hidden" name="id" value="{{ recipe.id }}">
+
+            <div class="page-edit-topo">
+                <button type="submit" class="btn">Deletar</button>
+            </div>
+        </form>
     </div>
 {% endblock %}
+
+{# https://pt.stackoverflow.com/questions/194041/como-deixar-meu-footer-sempre-embaixo #}
