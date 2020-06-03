@@ -1,7 +1,15 @@
-const recipes = require('../data')
+const data = require('../data.json')
 
 exports.index = function(req, res){
-  return res.render('index', { recipes })
+  const lastRecipes = []
+  for(recipe of data.recipes){
+    
+    if(lastRecipes.length < 6){
+      lastRecipes.push(recipe)
+    }
+  }
+
+  return res.render('index', { recipes: lastRecipes })
 }
 
 exports.about = function(req, res){

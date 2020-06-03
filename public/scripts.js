@@ -1,11 +1,9 @@
-//Ao clicar no card, leva para page RECIPE
 const cards = document.querySelectorAll('.card')
 
 for(let card of cards){
     card.addEventListener("click", function(){
-        const recipeId = card.getAttribute("id")
-        window.location.href = `/recipe/${recipeId}`
-        // window.location.href = `/receitas/${id}`
+        const id = card.getAttribute("id")
+        window.location.href = `/receitas/${id}`
     })
 }
 

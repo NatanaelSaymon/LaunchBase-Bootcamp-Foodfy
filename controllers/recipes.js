@@ -30,7 +30,13 @@ exports.post = function(req, res){
 
   let { url_imagem, titulo, autor, ingredientes, modo_preparo, info_adicionais } = req.body
 
-  const id = Number(data.recipes.length + 1)
+  // const id = Number(data.recipes.length + 1)
+  let id = 1
+  const lastId = data.recipes[data.recipes.length - 1]
+
+  if(lastId){
+    id = lastId.id + 1
+  }
 
   data.recipes.push({ id, url_imagem, titulo, autor, ingredientes, modo_preparo, info_adicionais })
 

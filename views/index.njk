@@ -1,24 +1,5 @@
 {% extends "layout.njk" %}
 
-{% block header %}
-    <header class="header">
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="/">
-                <img src="/image/logo.png">
-            </a>
-        </div>
-
-        <nav>
-            <!-- MENU -->
-            <ul class="menu">
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/receitas">Receitas</a></li>
-            </ul>
-        </nav>
-    </header>
-{% endblock %}
-
 {% block content %}
     <section class="banner">
         <div class="container">
@@ -41,10 +22,10 @@
             <h2>Mais acessadas</h2>
             <div class="receitas">
                 {% for recipe in recipes %}
-                    <div class="card" id="{{recipe.id}}">
-                        <div class="card-img" style="background-image: url({{ recipe.image }})"></div>
-                        <p class="receita-title"> {{ recipe.title }} </p>
-                        <span class="receita-autor"> {{ recipe.author }} </span>
+                    <div class="card" id="{{ recipe.id }}">
+                        <div class="card-img" style="background-image: url({{ recipe.url_imagem }})"></div>
+                        <p class="receita-title"> {{ recipe.titulo }} </p>
+                        <span class="receita-autor"> {{ recipe.autor }} </span>
                     </div>
                 {% endfor %}
             </div>

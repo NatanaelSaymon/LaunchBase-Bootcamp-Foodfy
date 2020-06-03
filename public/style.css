@@ -9,7 +9,15 @@
     box-sizing: border-box;
 }
 
-html,body{
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,16 +31,11 @@ a{
 }
 
 
-/* === VARIAVES DE COR === */
-:root{
-    --color-text: #000000;
-}
-
 .header{
     max-width: 940px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
-    align-items: center; /*centraliza os itens ao centro*/
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 0;
 }
@@ -54,30 +57,16 @@ nav ul.menu{
     padding: 10px;
 }
 
-/* === HEADER PAGE RECEITAS ===*/
-
-.header-receitas{
-    background-color: #000000;
-}
-
-.logo-receitas{
-    max-width: 940px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
-
 
 /* === CONTAINER-PRINCIPAL === */
+
 .container{
     max-width: 940px;
     margin: 0 auto;
 }
 
-/* === PAGE INDEX === */
-
 /* === BANNER === */
+
 .banner-principal{
     display: flex;
     justify-content: space-around;
@@ -102,8 +91,8 @@ nav ul.menu{
     line-height: 28px;
 }
 
+/* === CARDS RECEITAS === */
 
-/* === RECEITAS === */
 .receitas-mais-acessadas h2{
     margin-top: 40px;
     margin-bottom: 20px;
@@ -149,28 +138,14 @@ nav ul.menu{
     margin-bottom: 30px;
 }
 
-.receita-descricao p{
-    font-size: 28px;
-    margin-bottom: 6px;
-}
-
-.receita-descricao span{
-    font-size: 18px;
-}
-
-.receita-descricao{
-    position: absolute;
-    top: 260px;
-    text-align: center;
-}
-
 
 /* === FOOTER === */
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
     height: 62px;
     background: #EEEEEE;
     text-align: center;
@@ -181,7 +156,8 @@ footer{
     font-size: 14px;
 }
 
-/* === PAGE SOBRE === */
+
+/* === PAGE - SOBRE === */
 
 #page-sobre .title-sobre, .subtitle-sobre{
     margin-bottom: 25px;
@@ -202,7 +178,22 @@ footer{
 }
 
 
-/* === PAGE RECEITAS - RECIPES === */
+/* === PAGE - RECEITAS ===*/
+
+/* === HEADER === */
+
+.header-receitas{
+    background-color: #000000;
+}
+
+.logo-receitas{
+    max-width: 940px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
 
 .page-index-topo h2{
     margin-top: 0;
@@ -251,7 +242,7 @@ footer{
     position: absolute;
     background-color: #DC4747;
     top: 120px;
-    right: 435px;
+    right: 450px;
 }
 
 .items-recipes{

@@ -28,13 +28,15 @@
 
         </form>
 
-        <form method="POST" action="/receitas?_method=DELETE">
+        <form id="form-delete" method="POST" action="/receitas?_method=DELETE">
             <input type="hidden" name="id" value="{{ recipe.id }}">
 
             <div class="page-edit-topo">
                 <button type="submit" class="btn">Deletar</button>
             </div>
         </form>
+
+        {% include 'receitas/delete.njk' %}
     </div>
 {% endblock %}
 
