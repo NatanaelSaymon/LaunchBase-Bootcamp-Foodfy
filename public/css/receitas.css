@@ -1,0 +1,107 @@
+/* === === PAGE - RECEITAS === ===*/
+
+/* === === HEADER === === */
+
+.header-receitas{
+  background-color: var(--color-bg-header);
+}
+
+.logo-receitas{
+  max-width: 940px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.page-index-topo h2{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.avatar{
+  height: 280px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.page-index-topo,
+.page-create-topo,
+.page-show-topo,
+.page-edit-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 30px 0;
+}
+
+
+.page-index-topo .button,
+.page-create-topo button,
+.page-show-topo .button,
+.page-edit-topo button, 
+.add-ingrediente,
+.add-preparo {
+  width: 136px;
+  height: 37px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 37px;
+  color: var(--color-secundaria);
+  background-color: var(--color-bg-efect1);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-edit-topo button.btn{
+  position: absolute;
+  background-color: var(--color-bg-efect2);
+  top: 120px;
+  right: 450px;
+}
+
+.items-recipes{
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.recipes p.receita-title{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.recipes span.receita-autor{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.recipes .items-recipes h2{
+  font-size: 24px;
+}
+
+.recipes .items-recipes h2 span{
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--color-span);
+  cursor: pointer;
+}
+
+.recipes .items-recipes ul{
+  font-size: 18px;
+  color: var(--color-text-destac1);
+  line-height: 28px;
+  list-style: inside;
+}
+
+.recipes .items-recipes p{
+  font-size: 18px;
+  color: var(--color-text-destac1);
+  line-height: 28px;
+}

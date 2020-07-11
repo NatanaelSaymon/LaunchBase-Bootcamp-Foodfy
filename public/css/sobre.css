@@ -1,0 +1,19 @@
+/* === PAGE - SOBRE === */
+
+#page-sobre .title-sobre, .subtitle-sobre{
+  margin-bottom: 25px;
+}
+
+#page-sobre .title-sobre{
+  font-size: 24px;
+}
+
+#page-sobre .subtitle-sobre{
+  font-size: 20px;
+}
+
+#page-sobre .p-sobre{
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 28px;
+}
