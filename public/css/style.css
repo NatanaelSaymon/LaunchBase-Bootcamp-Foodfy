@@ -1,8 +1,8 @@
-/* ===  FONTES === */
+/* === === FONTES === === */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
-/* === RESET CSS === */
+/* === === RESET CSS === === */
 *{
     margin: 0;
     padding: 0;
@@ -92,13 +92,11 @@ nav ul.menu{
     width: 100%;
     transition: width 700ms ease;
 }
-
 /* === === END-HEADER === ===*/
 
 
 
 /* === === TEMA === ===*/
-
 input[type="checkbox"]{
     height: 0;
     width: 0;
@@ -140,26 +138,20 @@ input:checked + label::after{
 input:active:after{
     width: 45px;
 }
-
-
-
 /* === === END-TEMA === ===*/
 
 
 
 /* === === CONTAINER-PRINCIPAL === === */
-
 .container{
     max-width: 940px;
     margin: 0 auto;
 }
-
 /* === END-CONTAINER-PRINCIPAL === */
 
 
 
 /* === === BANNER === === */
-
 .banner-principal{
     display: flex;
     justify-content: space-around;
@@ -184,13 +176,11 @@ input:active:after{
     font-size: 18px;
     line-height: 28px;
 }
-
 /* === === END-BANNER === === */
 
 
 
 /* === === CARDS RECEITAS === === */
-
 .receitas-mais-acessadas h2{
     color: var(--color-principal);
     margin-top: 40px;
@@ -237,13 +227,11 @@ input:active:after{
     color: var(--color-span);
     margin-bottom: 30px;
 }
-
 /* === === END-CARDS RECEITAS === === */
 
 
 
 /* === === FOOTER === === */
-
 footer {
     display: flex;
     justify-content: center;
@@ -258,5 +246,4 @@ footer {
     color: var(--color-footer-text);
     font-size: 14px;
 }
-
 /* === === END-FOOTER === === */
