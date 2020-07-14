@@ -93,7 +93,7 @@ Caso o usuario digite algum endereço não encontrado no site, será direcionado
 * NodeJS
 
 ## Dependencias
-Use o npm como seu gerenciador de pacotes.
+Use o npm como seu gerenciador de pacotes para instalar as dependencias.
 ````
   npm install
 ````
