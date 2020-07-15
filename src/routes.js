@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
-const receitas = require('./controllers/recipes')
-const pages = require('./controllers/pages')
+const receitas = require('./app/controllers/recipes')
+const pages = require('./app/controllers/pages')
 
 // ROTAS INDEX/SOBRE
 routes.get("/", pages.index)
