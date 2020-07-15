@@ -105,5 +105,5 @@ Use o npm como seu gerenciador de pacotes para instalar as dependencias.
 - Web/Frontend
   - <img src="https://img.shields.io/badge/nunjucks-^3.2.1-blue"/>
 
-Projeto desenvolvido por <a href="https://www.linkedin.com/in/natanael-saymon-2b9b18145/">Natanael Saymon</a>, para aprendizado e melhoria de técnicas com NodeJS;
+Projeto desenvolvido por <a href="https://www.linkedin.com/in/natanael-saymon-2b9b18145/">Natanael Saymon</a>, para aprendizado e melhoria de técnicas com **NodeJS**. 
 
