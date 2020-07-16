@@ -30,7 +30,10 @@ exports.post = function(req, res){
 
   let { url_imagem, titulo, autor, ingredientes, modo_preparo, info_adicionais } = req.body
 
-  // const id = Number(data.recipes.length + 1)
+  //Retirando os valores nulos e vazios dos campos abaixo
+  ingredientes = ingredientes.filter(item => item)
+  modo_preparo = modo_preparo.filter(item => item)
+
   let id = 1
   const lastId = data.recipes[data.recipes.length - 1]
 

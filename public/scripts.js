@@ -8,38 +8,24 @@ for(let card of cards){
 }
 
 
-//Function para mostrar o conteudo de recipes
-function mostra(id){
-    if(document.getElementById(id).style.display == 'block'){
-        document.getElementById(id).style.display = 'none'
-        document.getElementById('mostra' + id).value = 'mostrar'
-    }
-    else{
-        document.getElementById(id).style.display = 'block'
-        document.getElementById('mostra' + id).value = 'esconder'
-    }
-}
-
-
 //Function para adicionar mais ingredientes
-window.onload = function(){
-    document.querySelector('.add-ingrediente').addEventListener("click", function(addIngredient){
-        const ingredients = document.querySelector('#ingredientes')
-        const fieldContainer = document.querySelectorAll('.ingrediente')
+document.querySelector('.add-ingrediente').addEventListener("click", function(addIngredient){
+    const ingredients = document.querySelector('#ingredientes')
+    const fieldContainer = document.querySelectorAll('.ingrediente')
 
-        // Realiza um clone do último ingrediente adicionado
-        const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
+    // Realiza um clone do último ingrediente adicionado
+    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
 
-        // Não adiciona um novo input se o último tem um valor vazio
-        if(newField.children[0].value == ""){
-            return false
-        }
+    // Não adiciona um novo input se o último tem um valor vazio
+    if(newField.children[0].value == ""){
+        return false
+    }
 
-        // Deixa o valor do input vazio
-        newField.children[0].value = ""
-        ingredients.appendChild(newField)
-    })
-}
+    // Deixa o valor do input vazio
+    newField.children[0].value = ""
+    ingredients.appendChild(newField)
+})
+
 
 
 //Function para adicionar mais passos

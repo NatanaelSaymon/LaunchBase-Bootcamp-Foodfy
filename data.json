@@ -171,6 +171,65 @@
         "Despeje metade em uma assadeira de 35cm x 25cm untada e enfarinhada. "
       ],
       "info_adicionais": "Distribua os ingredientes do recheio sobre a massa e cubra com o restante da massa. Leve ao forno médio, preaquecido, por 30 minutos ou até que ao enfiar um palito, ele saia limpo. Sirva em seguida."
+    },
+    {
+      "id": 13,
+      "url_imagem": "https://i.ytimg.com/vi/9JgsPTNZlKg/maxresdefault.jpg",
+      "titulo": "Torta de Bacalhau",
+      "autor": "Priscila Santana",
+      "ingredientes": [
+        "500g de bacalhau",
+        "1 cebola media",
+        "1kg de batata",
+        "3 tomates",
+        "Sal a gosto",
+        "1 colher de extrato de tomate"
+      ],
+      "modo_preparo": [
+        "Deixe o bacalhau de molho na água de um dia para o outro",
+        "Escorra, retire a pele e as espinhas e desfie.",
+        "Misture com a cebola, o tomate e os pimentões, todos picados",
+        "Acrescente o extrato de tomate e o sal e misture.",
+        "Leve ao fogo, refogue no óleo e reserve",
+        "À parte cozinhe as batatas com as cascas.",
+        "Depois escorra e descasque ainda quente. Passe no espremedor e reserve.",
+        "Bata as claras em neve, junte as gemas, a maisena, a margarina, o fermento, o queijo, o bacalhau e a batata.",
+        "Por último, o leite.",
+        "Mexa bem",
+        "Espalhe azeitetonas.",
+        "Asse em forno médio por 25 minutos."
+      ],
+      "info_adicionais": "Preparo em torno de 60 minutos, rendimento de 10 porções."
+    },
+    {
+      "id": 14,
+      "url_imagem": "https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg",
+      "titulo": "Feijoada",
+      "autor": "Natan",
+      "ingredientes": [
+        "feijão",
+        "carne",
+        "carne de porco"
+      ],
+      "modo_preparo": [
+        "cozinhe o feijão em uma panela de pressão",
+        "coloque todos os ingredientes na panela"
+      ],
+      "info_adicionais": "Uma feijoada completa, digna de restaurante, mas feita em casa, com os pertences que você preferir"
+    },
+    {
+      "id": 15,
+      "url_imagem": "https://www.receitadevovo.com.br/gbau/sistema/receitas/img/feijoada-nordestina.jpg",
+      "titulo": "feijoada",
+      "autor": "natan",
+      "ingredientes": [
+        "fermento",
+        "legumes"
+      ],
+      "modo_preparo": [
+        "adicione pedaços de morango"
+      ],
+      "info_adicionais": "frf"
     }
   ]
 }
