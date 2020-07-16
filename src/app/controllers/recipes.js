@@ -85,6 +85,12 @@ exports.edit = function(req, res){
 //PUT
 exports.put = function(req, res){
   const { id } = req.body
+  let { ingredientes } = req.body
+  let { modo_preparo } = req.body
+
+  //Retirando os valores nulos e vazios dos campos abaixo
+  ingredientes = ingredientes.filter(item => item)
+  modo_preparo = modo_preparo.filter(item => item)
 
   let index = 0
   
@@ -102,6 +108,8 @@ exports.put = function(req, res){
   const recipe = {
     ...foundRecipe,
     ...req.body,
+    ingredientes,
+    modo_preparo,
     id: Number(req.body.id)
   }
 
