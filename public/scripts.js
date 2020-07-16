@@ -27,12 +27,10 @@ document.querySelector('.add-ingrediente').addEventListener("click", function(ad
 })
 
 
-
 //Function para adicionar mais passos
 document.querySelector('.add-preparo').addEventListener("click", function(addNovoPasso){
     const novoPasso = document.querySelector('#modoPreparo')
     const fieldContainer = document.querySelectorAll('.novoPreparo')
-    
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
 
     if(newField.children[0].value == ""){
