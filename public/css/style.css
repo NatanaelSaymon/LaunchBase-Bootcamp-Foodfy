@@ -97,7 +97,7 @@ nav ul.menu{
 
 
 /* === === TEMA === ===*/
-input[type="checkbox"]{
+/* input[type="checkbox"]{
     height: 0;
     width: 0;
     visibility: hidden;
@@ -137,7 +137,7 @@ input:checked + label::after{
 
 input:active:after{
     width: 45px;
-}
+} */
 /* === === END-TEMA === ===*/
 
 

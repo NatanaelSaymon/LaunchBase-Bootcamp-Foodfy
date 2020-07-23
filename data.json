@@ -1,24 +1,6 @@
 {
   "recipes": [
     {
-      "id": 1,
-      "url_imagem": "https://comidinhasdochef.com/wp-content/uploads/2020/02/Bolo-de-Cenoura-Tudo-Gostoso.jpg",
-      "titulo": "Bolo de Cenoura",
-      "autor": "Suellen Souza Pereira",
-      "ingredientes": [
-        "Farinha",
-        "3 Ovos",
-        "Chocolate",
-        "Açucar",
-        "Cenoura"
-      ],
-      "modo_preparo": [
-        "Bata no liquidificador todos os ingredientes, acrescentando a farinha aos poucos.",
-        "Depois unte e enfarinhe uma forma e despeje a massa nela. Asse em forno médio por cerca de 40 minutos. Tire do forno, espere amornar e desenforme."
-      ],
-      "info_adicionais": "O bolo de cenoura é um bolo doce com raspagem de cenoura misturada dentro da massa. A cenoura é amolecida no processo de cozimento, e o bolo, usualmente, tem um amolecimento e uma textura densa e suave. O bolo de cenoura à moda brasileira é feito com uma massa contendo cenoura, normalmente com cobertura de chocolate."
-    },
-    {
       "id": 3,
       "url_imagem": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
       "titulo": "Lasanha mac n' cheese",
@@ -202,42 +184,48 @@
       "info_adicionais": "Preparo em torno de 60 minutos, rendimento de 10 porções."
     },
     {
-      "id": 14,
-      "url_imagem": "https://cdn.panelinha.com.br/receita/1588270905274-39_Panelinha_12_02_200635.jpg",
-      "titulo": "Feijoada",
-      "autor": "Natan",
-      "ingredientes": [
-        "feijão",
-        "carne",
-        "carne de porco"
-      ],
-      "modo_preparo": [
-        "cozinhe o feijão em uma panela de pressão",
-        "coloque todos os ingredientes na panela"
-      ],
-      "info_adicionais": "Uma feijoada completa, digna de restaurante, mas feita em casa, com os pertences que você preferir"
-    },
-    {
       "id": 15,
       "url_imagem": "https://www.receitadevovo.com.br/gbau/sistema/receitas/img/feijoada-nordestina.jpg",
-      "titulo": "feijoada",
-      "autor": "natan",
+      "titulo": "Feijoada",
+      "autor": "Natanael Saymon",
       "ingredientes": [
-        "fermento",
-        "legumes",
-        "thhth",
-        "gtgtg",
-        "gtgtt",
-        "gtgtggt",
-        "fermento",
-        "uu",
-        "fermento"
+        "1kg de feijão preto",
+        "100 g de carne seca",
+        "70 g de orelha de porco / 70 g de rabo de porco / 70 g de pé de porco",
+        "100 g de costelinha de porco",
+        "50 g de lombo de porco",
+        "100 g de paio",
+        "150 g de lingüiça portuguesa"
       ],
       "modo_preparo": [
-        "adicione pedaços de morango",
-        "Depois unte e enfarinhe uma forma e despeje a massa nela. Asse em forno médio por cerca de 40 minutos. Tire do forno, espere amornar e desenforme."
+        "Coloque as carnes de molho por 36 horas ou mais, vá trocando a água várias vezes, se for ambiente quente ou verão, coloque gelo por cima ou em camadas frias.",
+        "Coloque para cozinhar passo a passo: as carnes duras, em seguida as carnes moles.",
+        "Quando estiver mole coloque o feijão, e retire as carnes",
+        "Finalmente tempere o feijão."
       ],
-      "info_adicionais": "frf"
+      "info_adicionais": "A feijoada é um prato típico do Rio de Janeiro e é muito consumido em todo Brasil. Apesar de ser um prato com muitas variações, a típica feijoada completa é aquela que leva todas as carnes salgadas (costela, linguiças variadas, carne seca, pé, orelha, rabo, lombo, bacon) e é servira com rodelas de laranja, couve refogada no alho, arroz e farofa. "
+    },
+    {
+      "id": 16,
+      "url_imagem": "https://vovopalmirinha.com.br/wp-content/uploads/2019/07/receitas-vovo-palmirinha-rocambole-de-carne-moida.jpg",
+      "titulo": "Rocambole de Carne Moída",
+      "autor": "Natanael Saymon",
+      "ingredientes": [
+        "1/2 kg de carne moída",
+        "1 pacote de sopa de cebola",
+        "presunto fatiado",
+        "queijo fatiado",
+        "tempero verde",
+        "sal a gosto"
+      ],
+      "modo_preparo": [
+        "Tempere a carne moída com a sopa de cebola, o tempero verde e o sal.",
+        "Coloque a carne temperada sobre uma folha de papel laminado ou papel manteiga e abra a massa com um rolo, na espessura de 1 cm, mais ou menos.",
+        "Forre a carne com o presunto e o queijo, pode-se colocar também milho verde, ervilha e requeijão.",
+        "Enrole a carne, com ajuda da folha de papel laminado ou manteiga, em forma de rocambole.",
+        "Leve ao forno, em temperatura alta, por mais ou menos 30 minutos, ou no microondas por 15 minutos."
+      ],
+      "info_adicionais": "Essa receita de rocambole de carne moída é muito deliciosa e fácil de fazer! Você pode recheá-lo com outros ingredientes, como requeijão de corte, linguiça, ervilha e cenoura."
     }
   ]
 }
