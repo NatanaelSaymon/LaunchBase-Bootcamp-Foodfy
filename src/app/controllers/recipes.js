@@ -67,7 +67,6 @@ exports.show = function(req, res){
     return res.send('Receita não encontrada, tente novamente!')
   }
 
-  // return res.send(foundRecipe)
   return res.render('receitas/show', { recipe: foundRecipe })
 }
 
@@ -91,7 +90,7 @@ exports.put = function(req, res){
   let { ingredientes } = req.body
   let { modo_preparo } = req.body
 
-  //Retirando os valores nulos e vazios dos campos abaixo
+  //Retirando os valores nulos/vazios dos campos abaixo
   ingredientes = ingredientes.filter(item => item)
   modo_preparo = modo_preparo.filter(item => item)
 
