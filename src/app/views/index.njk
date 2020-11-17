@@ -3,12 +3,14 @@
 {% block content %}
     <section class="banner">
         <div class="container">
-            <div class="banner-principal">
-                <div class="banner-text">
-                    <h1>As melhores receitas</h1>
-                    <p>Aprenda construir os melhores pratos <br>
+            <div class="banner__principal">
+                <div class="banner__desc">
+                    <h1 class="banner__desc-title">As melhores receitas</h1>
+                    <p class="banner__desc-frase">
+                        Aprenda construir os melhores pratos <br>
                         com receitas criadas por profissionais <br>
-                        do mundo inteiro</p>
+                        do mundo inteiro
+                    </p>
                 </div>
                 <div class="banner-img">
                     <img src="/image/chef.png">
@@ -19,13 +21,13 @@
 
     <section class="receitas-mais-acessadas">
         <div class="container">
-            <h2>Mais acessadas</h2>
-            <div class="receitas">
+            <h2 class="receitas-mais-acessadas__title">Mais acessadas</h2>
+            <div class="receitas-mais-acessadas__content">
                 {% for recipe in recipes %}
-                    <div class="card" id="{{ recipe.id }}">
-                        <div class="card-img" style="background-image: url({{ recipe.url_imagem }})"></div>
-                        <p class="receita-title"> {{ recipe.titulo }} </p>
-                        <span class="receita-autor"> {{ recipe.autor }} </span>
+                    <div class="receitas-mais-acessadas__card" id="{{ recipe.id }}">
+                        <div class="receitas-mais-acessadas__card-image" style="background-image: url({{ recipe.url_imagem }})"></div>
+                        <p class="receitas-mais-acessadas__card-title"> {{ recipe.titulo }} </p>
+                        <span class="receitas-mais-acessadas__card-autor"> {{ recipe.autor }} </span>
                     </div>
                 {% endfor %}
             </div>

@@ -19,22 +19,20 @@
 {% block content %}
     <section class="receitas-mais-acessadas">
         <div class="container">
-
-            <div class="page-index-topo">
+            <div class="page-receita-topo">
                 <h2>Gerenciar receitas</h2>
-                <a href="/receitas/create" class="button">Nova receita</a>
+                <a href="/receitas/create" class="btn-primary">Nova receita</a>
             </div>
 
-            <div class="receitas">
+            <div class="receitas-mais-acessadas__content">
                 {% for recipe in recipes %}
-                    <div class="card" id="{{ recipe.id }}">
-                        <div class="card-img" style="background-image: url({{ recipe.url_imagem }})"></div>
-                        <p class="receita-title">{{ recipe.titulo }}</p>
-                        <span class="receita-autor">{{ recipe.autor }}</span>
+                    <div class="receitas-mais-acessadas__card" id="{{ recipe.id }}">
+                        <div class="receitas-mais-acessadas__card-image" style="background-image: url({{ recipe.url_imagem }})"></div>
+                        <p class="receitas-mais-acessadas__card-title">{{ recipe.titulo }}</p>
+                        <span class="receitas-mais-acessadas__card-autor">{{ recipe.autor }}</span>
                     </div>
                 {% endfor%}
             </div>
-
         </div>
     </section>
 {% endblock %}

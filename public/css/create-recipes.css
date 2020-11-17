@@ -1,17 +1,17 @@
 /* === PAGE CREATE === */
-h2, h3{
+h2, h3 {
   color: var(--color-principal);
 }
 
-.form-recipes .item{
+.form-recipes__item {
   margin-bottom: 30px;
 }
 
-.form-recipes .item h3{
+.form-recipes__title {
   margin-bottom: 6px;
 }
 
-.form-recipes input{
+.form-recipes__field {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -21,16 +21,16 @@ h2, h3{
   outline: none;
 }
 
-#ingredientes, #modoPreparo{
+.mg-b{
   margin-bottom: 10px;
 }
 
-.ingrediente input,
-.novoPreparo input{
+.ingrediente .form-recipes__field,
+.novoPreparo .form-recipes__field {
   margin-bottom: 5px;
 }
 
-.form-recipes textarea{
+.form-recipes__textarea {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   resize: none;

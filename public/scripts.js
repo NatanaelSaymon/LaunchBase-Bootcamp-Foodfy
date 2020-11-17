@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.card')
+const cards = document.querySelectorAll('.receitas-mais-acessadas__card')
 
 for(let card of cards){
     card.addEventListener("click", function(){

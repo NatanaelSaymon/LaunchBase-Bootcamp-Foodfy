@@ -15,7 +15,7 @@
 }
 
 
-.page-index-topo h2{
+.page-receita-topo h2{
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -28,10 +28,7 @@
   border-radius: 15px;
 }
 
-.page-index-topo,
-.page-create-topo,
-.page-show-topo,
-.page-edit-topo {
+.page-receita-topo{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,13 +36,7 @@
   padding: 30px 0;
 }
 
-
-.page-index-topo .button,
-.page-create-topo button,
-.page-show-topo .button,
-.page-edit-topo button, 
-.add-ingrediente,
-.add-preparo {
+.btn-primary {
   width: 136px;
   height: 37px;
   font-size: 16px;
@@ -58,7 +49,7 @@
   cursor: pointer;
 }
 
-.page-edit-topo button.btn{
+.btn-edit{
   position: absolute;
   background-color: var(--color-bg-efect2);
   top: 120px;

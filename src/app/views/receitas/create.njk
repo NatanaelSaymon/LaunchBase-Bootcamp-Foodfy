@@ -17,68 +17,68 @@
 
         <form  class="form-recipes" method="POST" action="/receitas">
 
-            <div class="page-create-topo">
+            <div class="page-receita-topo">
                 <h2>Criando receita</h2>
-                <button type="submit">Salvar receita</button>
+                <button type="submit" class="btn-primary">Salvar receita</button>
             </div>
 
-            <div class="item">
+            <div class="form-recipes__item">
                 <div>
-                    <h3>Imagem da receita</h3>
+                    <h3 class="form-recipes__title">Imagem da receita</h3>
                 </div>
                 <div>
-                    <input type="url" name="url_imagem">
-                </div>
-            </div>
-
-            <div class="item">
-                <div>
-                    <h3>Titulo da receita</h3>
-                </div>
-                <div>
-                    <input type="text" name="titulo">
+                    <input type="url" name="url_imagem" class="form-recipes__field">
                 </div>
             </div>
 
-            <div class="item">
+            <div class="form-recipes__item">
                 <div>
-                    <h3>Autor</h3>
+                    <h3 class="form-recipes__title">Titulo da receita</h3>
                 </div>
                 <div>
-                    <input type="text" name="autor">
+                    <input type="text" name="titulo" class="form-recipes__field">
                 </div>
             </div>
 
-            <div class="item">
-                <div id="ingredientes">
+            <div class="form-recipes__item">
+                <div>
+                    <h3 class="form-recipes__title">Autor</h3>
+                </div>
+                <div>
+                    <input type="text" name="autor" class="form-recipes__field">
+                </div>
+            </div>
+
+            <div class="form-recipes__item">
+                <div id="ingredientes" class="mg-b">
                     <div>
-                        <h3>Ingredientes</h3>
+                        <h3 class="form-recipes__title">Ingredientes</h3>
                     </div>
                     <div class="ingrediente">
-                        <input type="text" name="ingredientes[]">
+                        <input type="text" name="ingredientes[]" class="form-recipes__field">
                     </div>
                 </div>
-                <button type="button" class="add-ingrediente">Adicionar novo</button>
+                <button type="button" class="btn-primary add-ingrediente">Adicionar novo</button>
             </div>
 
-            <div class="item">
-                <div id="modoPreparo">
+            <div class="form-recipes__item">
+                <div id="modoPreparo" class="mg-b">
                     <div>
-                        <h3>Modo de preparo</h3>
+                        <h3 class="form-recipes__title">Modo de preparo</h3>
                     </div>
                     <div class="novoPreparo">
-                        <input type="text" name="modo_preparo[]">
+                        <input type="text" name="modo_preparo[]" class="form-recipes__field">
                     </div>
                 </div>
-                <button type="button" class="add-preparo">Adicionar novo</button>
+                <button type="button" class="btn-primary add-preparo">Adicionar novo</button>
             </div>
             
-            <div class="item">
+            <div class="form-recipes__item">
                 <div>
-                    <h3>Informações adicionais</h3>
+                    <h3 class="form-recipes__title">Informações adicionais</h3>
                 </div>
                 <div class="box-info">
-                    <textarea name="info_adicionais" cols="100" rows="10"></textarea>
+                    <textarea name="info_adicionais" cols="100" rows="10"  class="form-recipes__textarea"></textarea>
                 </div>
             </div>
 

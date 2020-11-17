@@ -3,18 +3,18 @@
 
 
 /* === === RESET CSS === === */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100%;
     min-height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background: var(--color-bg);
@@ -22,7 +22,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-:root{
+:root {
     --color-bg: #ffffff;
     --color-bg-panel: #FBDFDB;
     --color-principal: #000000;
@@ -40,19 +40,19 @@ body{
     --color-footer-text: #999999;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-principal);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
 
 
 /* === === HEADER === ===*/
-.header{
+.header {
     max-width: 940px;
     display: flex;
     align-items: center;
@@ -60,25 +60,22 @@ a{
     padding: 30px 0;
 }
 
-.menu{
+.header__nav-list {
     display: flex;
     margin-left: 100px;
-}
-
-nav ul.menu{
     list-style: none;
 }
 
-.menu li{
+.header__nav-item{
     margin-left: 10px;
 }
 
-.menu li a{
+.header__nav-link{
     margin: 10px;
     position: relative;
 }
 
-.menu li a::after{
+.header__nav-link::after {
     content: "";
     width: 0;
     height: 2px;
@@ -88,7 +85,7 @@ nav ul.menu{
     bottom: -4px;
 }
 
-.menu li a:hover::after{
+.header__nav-link:hover::after {
     width: 100%;
     transition: width 700ms ease;
 }
@@ -96,54 +93,8 @@ nav ul.menu{
 
 
 
-/* === === TEMA === ===*/
-/* input[type="checkbox"]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-label{
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 52px;
-    height: 27px;
-    float: right;
-    background: gray;
-    border-radius: 100px;
-    position: relative;
-}
-
-label::after{
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
-}
-
-input:checked + label{
-    background-color: var(--color-headings);
-}
-
-input:checked + label::after{
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-}
-
-input:active:after{
-    width: 45px;
-} */
-/* === === END-TEMA === ===*/
-
-
-
 /* === === CONTAINER-PRINCIPAL === === */
-.container{
+.container {
     max-width: 940px;
     margin: 0 auto;
 }
@@ -152,7 +103,7 @@ input:active:after{
 
 
 /* === === BANNER === === */
-.banner-principal{
+.banner__principal {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -161,17 +112,17 @@ input:active:after{
     border-radius: 30px;
 }
 
-.banner-text{
+.banner__desc {
     flex-basis: 60%;
 }
 
-.banner-text h1{
+.banner__desc-title {
     color: var(--color-principal);
     font-size: 29px;
     margin-bottom: 10px;
 }
 
-.banner-text p{
+.banner__desc-frase {
     text-align: justify;
     font-size: 18px;
     line-height: 28px;
@@ -181,13 +132,13 @@ input:active:after{
 
 
 /* === === CARDS RECEITAS === === */
-.receitas-mais-acessadas h2{
+.receitas-mais-acessadas__title{
     color: var(--color-principal);
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.receitas{
+.receitas-mais-acessadas__content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -195,18 +146,18 @@ input:active:after{
     margin-bottom: 61px;
 }
 
-.card{
+.receitas-mais-acessadas__card{
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.card:hover{
+.receitas-mais-acessadas__card:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.card .card-img{
+.receitas-mais-acessadas__card-image{
     height: 110px;
     background-position: center;
     background-size: cover;
@@ -215,13 +166,13 @@ input:active:after{
     border-radius: 15px;
 }
 
-.receita-title{
+.receitas-mais-acessadas__card-title{
     color: var(--color-principal);
     margin-top: 20px;
     font-size: 18px;
 }
 
-.receita-autor{
+.receitas-mais-acessadas__card-autor{
     display: inline-block;
     font-size: 14px;
     color: var(--color-span);
@@ -232,17 +183,13 @@ input:active:after{
 
 
 /* === === FOOTER === === */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    height: 62px;
+.footer {
     background: var(--color-bg-footer);
     text-align: center;
+    padding: 20px;
 }
 
-.footer p{
+.footer__desc{
     color: var(--color-footer-text);
     font-size: 14px;
 }

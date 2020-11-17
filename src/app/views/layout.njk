@@ -30,24 +30,22 @@
             <header>
                 <div class="container">
                     <div class="header">
-                        <div class="logo">
+                        <div class="header__logo">
                             <a href="/">
                                 <img src="/image/logo.png">
                             </a>
                         </div>
 
-                        <nav>
-                            <ul class="menu">
-                                <li><a href="/sobre">Sobre</a></li>
-                                <li><a href="/receitas">Receitas</a></li>
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="/sobre">Sobre</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="/receitas">Receitas</a>
+                                </li>
                             </ul>
                         </nav>
-
-                        {# Dark-Mode #}
-                        {# <div class="tema_toggle">
-                            <input type="checkbox" name="theme" id="switch">
-                            <label for="switch">Tema</label>
-                        </div> #}
                     </div>
                 </div>
             </header>
@@ -55,10 +53,8 @@
 
         {% block content %} {% endblock %}
 
-        <footer>
-            <div class="footer">
-                <p>Todos os reservados, receitas Foodfy.</p>
-            </div>
+        <footer class="footer">
+            <p class="footer__desc">Todos os reservados, receitas Foodfy.</p>
         </footer>
 
         <script src="/scripts.js"></script>

@@ -1,67 +1,67 @@
-<div class="item">
+<div class="form-recipes__item">
     <div>
-        <h3>Imagem da receita</h3>
+        <h3 class="form-recipes__item-title">Imagem da receita</h3>
     </div>
     <div>
-        <input type="url" name="url_imagem" value="{{ recipe.url_imagem }}">
-    </div>
-</div>
-
-<div class="item">
-    <div>
-        <h3>Nome da receita</h3>
-    </div>
-    <div>
-        <input type="text" name="titulo" value="{{ recipe.titulo }}">
+        <input type="url" name="url_imagem" value="{{ recipe.url_imagem }}" class="form-recipes__field">
     </div>
 </div>
 
-<div class="item">
+<div class="form-recipes__item">
     <div>
-        <h3>Autor</h3>
+        <h3 class="form-recipes__item-title">Nome da receita</h3>
     </div>
     <div>
-        <input type="text" name="autor" value="{{ recipe.autor }}">
+        <input type="text" name="titulo" value="{{ recipe.titulo }}" class="form-recipes__field">
     </div>
 </div>
 
-<div class="item">
+<div class="form-recipes__item">
+    <div>
+        <h3 class="form-recipes__item-title">Autor</h3>
+    </div>
+    <div>
+        <input type="text" name="autor" value="{{ recipe.autor }}" class="form-recipes__field">
+    </div>
+</div>
+
+<div class="form-recipes__item">
     <div id="ingredientes">
         <div>
-            <h3>Ingredientes</h3>
+            <h3 class="form-recipes__item-title">Ingredientes</h3>
         </div>
 
         {% for ingrediente in recipe.ingredientes %}
         <div class="ingrediente">
-            <input type="text" name="ingredientes[]" value="{{ ingrediente }}">
+            <input type="text" name="ingredientes[]" value="{{ ingrediente }}" class="form-recipes__field">
         </div>
         {% endfor %} 
 
     </div>
-    <button type="button" class="add-ingrediente">Adicionar novo</button>
+    <button type="button" class="btn-primary add-ingrediente">Adicionar novo</button>
 </div>
 
-<div class="item">
+<div class="form-recipes__item">
     <div id="modoPreparo">
         <div>
-            <h3>Modo de preparo</h3>
+            <h3 class="form-recipes__item-title">Modo de preparo</h3>
         </div>
 
         {% for preparo in recipe.modo_preparo %}
         <div class="novoPreparo">
-            <input type="text" name="modo_preparo[]" value="{{ preparo }}">
+            <input type="text" name="modo_preparo[]" value="{{ preparo }}" class="form-recipes__field">
         </div>
         {% endfor %}
 
     </div>
-    <button type="button" class="add-preparo">Adicionar novo</button>
+    <button type="button" class="btn-primary add-preparo">Adicionar novo</button>
 </div>
 
-<div class="item">
+<div class="form-recipes__item">
     <div>
-        <h3>Informações adicionais</h3>
+        <h3 class="form-recipes__item-title">Informações adicionais</h3>
     </div>
     <div class="box-info">
-        <textarea name="info_adicionais" cols="100" rows="10">{{ recipe.info_adicionais }}</textarea>
+        <textarea name="info_adicionais" cols="100" rows="10" class="form-recipes__textarea">{{ recipe.info_adicionais }}</textarea>
     </div>
 </div>
