@@ -1,6 +1,7 @@
 const recipes = require('../../../data.json')
 const fs = require('fs')
 const data = require('../../../data.json')
+const { date } = require('../../lib/utils')
 
 //INDEX
 exports.index = function(req, res){
@@ -34,6 +35,8 @@ exports.post = function(req, res){
   ingredientes = ingredientes.filter(item => item)
   modo_preparo = modo_preparo.filter(item => item)
 
+  const created_at = Date.now()
+
   let id = 1
   const lastId = data.recipes[data.recipes.length - 1]
 
@@ -41,7 +44,7 @@ exports.post = function(req, res){
     id = lastId.id + 1
   }
 
-  data.recipes.push({ id, url_imagem, titulo, autor, ingredientes, modo_preparo, info_adicionais })
+  data.recipes.push({ id, url_imagem, titulo, autor, ingredientes, modo_preparo, info_adicionais, created_at })
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
     if(err){
@@ -64,7 +67,6 @@ exports.show = function(req, res){
     return res.send('Receita não encontrada, tente novamente!')
   }
 
-  // return res.send(foundRecipe)
   return res.render('receitas/show', { recipe: foundRecipe })
 }
 
@@ -88,7 +90,7 @@ exports.put = function(req, res){
   let { ingredientes } = req.body
   let { modo_preparo } = req.body
 
-  //Retirando os valores nulos e vazios dos campos abaixo
+  //Retirando os valores nulos/vazios dos campos abaixo
   ingredientes = ingredientes.filter(item => item)
   modo_preparo = modo_preparo.filter(item => item)
 
