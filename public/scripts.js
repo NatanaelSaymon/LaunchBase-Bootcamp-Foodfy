@@ -1,3 +1,4 @@
+/* === Script Menu ativo === */
 const cards = document.querySelectorAll('.receitas-mais-acessadas__card')
 
 for(let card of cards){
@@ -17,9 +18,11 @@ for(item of menuItens){
     }
 }
 
+/* === End Script Menu ativo === */
 
-//Function para adicionar mais ingredientes
-document.querySelector('.add-ingrediente').addEventListener("click", function(addIngredient){
+
+/* === Function Para adicionar novo campos em ingredientes === */
+function addIngrediente(){
     const ingredients = document.querySelector('#ingredientes')
     const fieldContainer = document.querySelectorAll('.ingrediente')
 
@@ -34,11 +37,11 @@ document.querySelector('.add-ingrediente').addEventListener("click", function(ad
     // Deixa o valor do input vazio
     newField.children[0].value = ""
     ingredients.appendChild(newField)
-})
+}
 
 
-//Function para adicionar mais passos
-document.querySelector('.add-preparo').addEventListener("click", function(addNovoPasso){
+/* === Function Para adicionar novo campos em Preparo === */
+function addPreparo(){
     const novoPasso = document.querySelector('#modoPreparo')
     const fieldContainer = document.querySelectorAll('.novoPreparo')
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
@@ -49,7 +52,7 @@ document.querySelector('.add-preparo').addEventListener("click", function(addNov
 
     newField.children[0].value = ""
     novoPasso.appendChild(newField)
-})
+}
 
 
 
