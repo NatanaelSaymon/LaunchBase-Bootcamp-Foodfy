@@ -7,6 +7,16 @@ for(let card of cards){
     })
 }
 
+const currentPage = location.pathname
+const menuItens = document.querySelectorAll("header .header__nav-item a")
+
+for(item of menuItens){
+    if(currentPage == item.getAttribute("href")){
+        console.log(item)
+        item.classList.add('activeMenu')
+    }
+}
+
 
 //Function para adicionar mais ingredientes
 document.querySelector('.add-ingrediente').addEventListener("click", function(addIngredient){
